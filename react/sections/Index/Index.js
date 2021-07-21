@@ -1,4 +1,5 @@
 import classes from './Index.module.css';
+import HamIcon from '../../component/HamIcon/HamIcon';
 export default function Index() {
     return <section className={classes.index}>
         <div className={classes.intro}>

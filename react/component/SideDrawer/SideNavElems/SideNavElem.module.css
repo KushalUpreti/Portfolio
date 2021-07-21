@@ -10,17 +10,17 @@
 }
 
 .side_nav_elems li {
-  width: 100%;
+  width: 230px;
   margin: 15px;
 }
 
 .side_nav_elems a {
   border: 1px solid transparent;
-  color: black;
+  color: var(--secondary-font-color);
   text-decoration: none;
   padding: 0;
   font-size: medium;
-  font-family: "Montserrat", sans-serif;
+  font-family: var(--roboto-font);
   background: transparent;
   font-weight: 400;
 }

@@ -1,4 +1,4 @@
-import ReactDOM from 'react-dom';
+
 import Backdrop from '../Backdrop/Backdrop';
 import Container from '../Containers/Container';
 import SideNavElem from './SideNavElems/SideNavElem'
@@ -20,11 +20,8 @@ const Sidedrawer = (props) => {
 
     const content =
         <>
-            {props.show ? <Backdrop remove={props.close} /> : null}
+            {props.show ? <Backdrop remove={props.handler} /> : null}
             <div className={classes.sidedrawer} style={style}>
-                <div className={classes.cross_button_container}>
-                    <i className="fas fa-times" onClick={props.close}></i>
-                </div>
 
                 <Container >
                     <SideNavElem shut={props.close} />
