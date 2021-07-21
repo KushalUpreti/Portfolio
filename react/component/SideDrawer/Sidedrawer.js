@@ -2,7 +2,8 @@ import ReactDOM from 'react-dom';
 import Backdrop from '../Backdrop/Backdrop';
 import Container from '../Containers/Container';
 import SideNavElem from './SideNavElems/SideNavElem'
-import './Sidedrawer.css';
+import classes from './Sidedrawer.module.css';
+import Portal from '../../../hoc/Portal';
 
 const Sidedrawer = (props) => {
 
@@ -20,8 +21,8 @@ const Sidedrawer = (props) => {
     const content =
         <>
             {props.show ? <Backdrop remove={props.close} /> : null}
-            <div className="sidedrawer" style={style}>
-                <div className="cross-button-container">
+            <div className={classes.sidedrawer} style={style}>
+                <div className={classes.cross_button_container}>
                     <i className="fas fa-times" onClick={props.close}></i>
                 </div>
 
@@ -31,7 +32,7 @@ const Sidedrawer = (props) => {
             </div>
         </>
 
-    return ReactDOM.createPortal(content, document.getElementById("sidedrawer"));
+    return <Portal id="sidedrawer">{content}</Portal>
 }
 
 export default Sidedrawer;

@@ -1,9 +1,9 @@
 import ReactDOM from 'react-dom'
-import './Backdrop.css'
+import classes from './Backdrop.module.css'
 
 const Backdrop = (props) => {
     return ReactDOM.createPortal(
-        <div className="Backdrop" onClick={props.remove}>
+        <div className={classes.backdrop} onClick={props.remove}>
 
         </div>, document.getElementById('backdrop-hook')
     )

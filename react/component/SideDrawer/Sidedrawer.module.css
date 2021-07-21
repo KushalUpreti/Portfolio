@@ -10,13 +10,13 @@
   overflow-y: scroll;
 }
 
-.sidedrawer > .cross-button-container {
+.sidedrawer > .cross_button_container {
   padding: 20px 0;
   font-size: 30px;
   display: flex;
   justify-content: flex-end;
 }
 
-.sidedrawer > .cross-button-container > i {
+.sidedrawer > .cross_button_container > i {
   margin-right: 30px;
 }

@@ -1,5 +1,5 @@
 import React from 'react';
-import "./Container.css";
+import classes from "./Container.module.css";
 
 const Container = (props) => {
     return (
@@ -7,7 +7,7 @@ const Container = (props) => {
             marginTop: `${props.marginTop}`,
             marginBottom: props.marginBottom || "0"
         }}
-            className="nav-link-container">
+            className={classes.nav_link_container}>
             {props.children}
         </div>
     );
