@@ -10,10 +10,32 @@
 
 .sideNav > ul {
   list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0;
+  height: 100%;
+  margin: 0;
+}
+
+.sideNav li {
+  padding: 10px;
+  color: var(--heading-color);
+  transition: all 0.2s ease;
+}
+
+.sideNav li:hover {
+  transform: scale(1.2);
 }
 
 @media (min-width: 700px) {
   .sideNav {
     display: block;
+  }
+
+  .sideNav > div {
+    position: absolute;
+    top: 30px;
+    left: 0;
   }
 }
