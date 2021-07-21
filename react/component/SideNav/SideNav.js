@@ -1,8 +1,6 @@
 import classes from "./SideNav.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faWrench, faUserAlt, faList, faPhone } from '@fortawesome/free-solid-svg-icons';
-import logo from '../../../public/logo.svg';
-import Image from "next/image";
 
 export default function SideNav() {
     return <nav className={classes.sideNav}>

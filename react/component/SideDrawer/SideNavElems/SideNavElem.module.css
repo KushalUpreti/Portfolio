@@ -10,8 +10,16 @@
 }
 
 .side_nav_elems li {
-  width: 230px;
+  padding: 0 120px 0 0;
   margin: 15px;
+  display: flex;
+  align-items: center;
+}
+
+.side_nav_elems svg {
+  height: 30px;
+  width: 30px;
+  margin-right: 20px;
 }
 
 .side_nav_elems a {
@@ -23,4 +31,5 @@
   font-family: var(--roboto-font);
   background: transparent;
   font-weight: 400;
+  text-align: left;
 }

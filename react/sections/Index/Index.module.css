@@ -20,6 +20,7 @@
 .intro > p {
   font-family: var(--roboto-font);
   color: var(--secondary-font-color);
+  font-size: 0.8rem;
 }
 
 @media (min-width: 400px) {
