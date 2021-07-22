@@ -30,12 +30,6 @@
   overflow: hidden;
 }
 
-@media (min-width: 400px) {
-  .header > .header_container {
-    padding: 0 50px;
-  }
-}
-
 @media (min-width: 700px) {
   .header {
     display: none;
