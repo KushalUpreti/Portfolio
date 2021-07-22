@@ -24,20 +24,18 @@
 }
 
 @media (min-width: 400px) {
-  /*  */
-}
-
-@media (min-width: 700px) {
-  .main {
-    padding: 0 52px 0 100px;
-  }
-
   .intro > h1 {
     font-size: 6rem;
   }
 
   .intro > p {
     font-size: 1.1rem;
+  }
+}
+
+@media (min-width: 700px) {
+  .main {
+    padding: 0 52px 0 100px;
   }
 }
 

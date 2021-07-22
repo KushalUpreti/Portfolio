@@ -1,7 +1,7 @@
 .sideNav {
   display: none;
   width: 3rem;
-  background-color: var(--secondary-dak);
+  background-color: var(--secondary-dark);
   position: fixed;
   left: 0;
   top: 0;

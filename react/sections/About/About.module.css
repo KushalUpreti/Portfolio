@@ -1,0 +1,89 @@
+.section {
+  width: 100%;
+  padding-bottom: 3rem;
+}
+
+.section > .flex_about {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.about_div > h2 {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  color: var(--heading-color);
+  font-family: var(--roboto-font);
+  margin-bottom: 2.5rem;
+}
+
+.about_div > h2::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 3px;
+  width: 175px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: var(--secondary-font-color);
+}
+
+.about_div > p {
+  word-wrap: break-word;
+  color: var(--secondary-font-color);
+  line-height: 1.5rem;
+}
+
+.section button {
+  cursor: pointer;
+  width: 80px;
+  height: 40px;
+  margin-top: 20px;
+  background-color: var(--secondary-dark);
+  border: none;
+  color: var(--heading-color);
+  font-family: var(--roboto-font);
+  transition: all 0.3s ease;
+}
+
+.section button:hover {
+  box-shadow: 0 0 10px 0 var(--heading-color);
+}
+
+.section > .flex_about > .about_div {
+  flex: 1 1 40%;
+  min-width: 25ch;
+}
+
+.section > .flex_about > .avatar_div {
+  padding: 2.5rem 0;
+  flex: 1 1 30%;
+  text-align: center;
+}
+
+@media (min-width: 400px) {
+  .about_div > h2::after {
+    width: 100%;
+  }
+}
+
+@media (min-width: 700px) {
+  .about_div > h2::after {
+    width: 450px;
+  }
+}
+
+@media (min-width: 900px) {
+  .section > .flex_about {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+@media (min-width: 1000px) {
+  .section > .flex_about > .avatar_div {
+    text-align: right;
+  }
+}

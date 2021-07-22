@@ -3,6 +3,8 @@ import SideNav from '../react/component/SideNav/SideNav';
 import Header from '../react/container/Header/Header';
 import styles from '../styles/Home.module.css';
 import Index from '../react/sections/Index/Index';
+import About from '../react/sections/About/About';
+import Socials from '../react/component/Socials/Socials';
 
 export default function Home() {
   return (
@@ -17,8 +19,10 @@ export default function Home() {
       <div className={styles.content}>
         <main className={styles.main}>
           <Index />
+          <About />
         </main>
       </div>
+      <Socials />
     </>
   )
 }
