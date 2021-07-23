@@ -24,7 +24,7 @@ const Sidedrawer = (props) => {
             <div className={classes.sidedrawer} style={style}>
 
                 <Container >
-                    <SideNavElem shut={props.close} />
+                    <SideNavElem shut={props.close} remove={props.handler} />
                 </Container>
             </div>
         </>

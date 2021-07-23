@@ -4,29 +4,28 @@ import { faHome, faWrench, faUserAlt, faList, faPhone } from '@fortawesome/free-
 
 const SideNavElem = (props) => {
 
-
     return (
         <>
             <ul className={classes.side_nav_elems}>
-                <li>
-                    <a href="#a"><FontAwesomeIcon icon={faHome} /></a>
-                    <a href="#none" onClick={props.shut} >Home</a>
+                <li onClick={props.remove}>
+                    <a href="#index"><FontAwesomeIcon icon={faHome} /></a>
+                    <a href="#index" onClick={props.shut} >Home</a>
                 </li>
-                <li>
-                    <a href="#a"><FontAwesomeIcon icon={faUserAlt} /></a>
-                    <a href="#none" onClick={props.shut} >About</a>
+                <li onClick={props.remove}>
+                    <a href="#about"><FontAwesomeIcon icon={faUserAlt} /></a>
+                    <a href="#about" onClick={props.shut} >About</a>
                 </li>
-                <li>
-                    <a href="#a"><FontAwesomeIcon icon={faWrench} /></a>
-                    <a href="#none" onClick={props.shut} >Skills</a>
+                <li onClick={props.remove}>
+                    <a href="#skills"><FontAwesomeIcon icon={faWrench} /></a>
+                    <a href="#skills" onClick={props.shut} >Skills</a>
                 </li>
-                <li>
-                    <a href="#a"><FontAwesomeIcon icon={faList} /></a>
-                    <a href="#none" onClick={props.shut} >Projects</a>
+                <li onClick={props.remove}>
+                    <a href="#projects"><FontAwesomeIcon icon={faList} /></a>
+                    <a href="#projects" onClick={props.shut} >Projects</a>
                 </li>
-                <li>
-                    <a href="#a"><FontAwesomeIcon icon={faPhone} /></a>
-                    <a href="#none" onClick={props.shut} >Contact</a>
+                <li onClick={props.remove}>
+                    <a href="#contact"><FontAwesomeIcon icon={faPhone} /></a>
+                    <a href="#contact" onClick={props.shut} >Contact</a>
                 </li>
             </ul>
         </>

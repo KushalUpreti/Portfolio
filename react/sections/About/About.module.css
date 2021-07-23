@@ -1,6 +1,5 @@
 .section {
   width: 100%;
-  padding-bottom: 3rem;
 }
 
 .section > .flex_about {
@@ -33,6 +32,8 @@
   word-wrap: break-word;
   color: var(--secondary-font-color);
   line-height: 1.5rem;
+  font-family: var(--roboto-font);
+  font-size: var(--para-font-size-mobile);
 }
 
 .section button {

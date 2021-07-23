@@ -8,7 +8,7 @@
 }
 
 .header > .header_container {
-  padding: 0 10px 0 30px;
+  padding-left: 30px;
   background-color: var(--secondary-dark);
   height: 100%;
 }

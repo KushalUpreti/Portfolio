@@ -6,7 +6,13 @@
   --secondary-font-color: #cfc8c8;
   --roboto-font: "Roboto", sans-serif;
   --secondary-dark: #2c2c2c;
-  --secondary-pink: #c4133f;
+  --para-line-height: 1.5rem;
+  --para-font-size-mobile: 0.9rem;
+  --phone-section-padding-top: 3rem 0;
+
+  --tablet-section-padding-top: 5rem 0;
+
+  --desktop-section-padding-top: 9rem 0;
 }
 
 html,

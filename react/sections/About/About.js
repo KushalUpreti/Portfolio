@@ -3,7 +3,7 @@ import Avatar from '../../component/Avatar/Avatar';
 
 export default function About() {
     return <section className={classes.section} id="about">
-        <div className={classes.flex_about}>
+        <div className={classes.flex_about} >
             <div className={classes.about_div}>
                 <h2>
                     About Me

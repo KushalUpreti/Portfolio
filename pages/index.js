@@ -5,6 +5,7 @@ import styles from '../styles/Home.module.css';
 import Index from '../react/sections/Index/Index';
 import About from '../react/sections/About/About';
 import Socials from '../react/component/Socials/Socials';
+import Skills from '../react/sections/Skills/Skills';
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
         <main className={styles.main}>
           <Index />
           <About />
+          <Skills />
         </main>
       </div>
       <Socials />

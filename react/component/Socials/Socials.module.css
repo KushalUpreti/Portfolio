@@ -12,7 +12,7 @@
   }
 
   .socials_ul > li > a > svg {
-    fill: var(--secondary-font-color);
+    fill: white;
   }
 
   .socials_container > .socials_ul {
