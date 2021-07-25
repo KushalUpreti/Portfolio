@@ -1,0 +1,59 @@
+.project_li {
+  margin-bottom: 3rem;
+}
+
+.project_li > .project_image {
+  display: none;
+}
+
+.project_li > .project_text {
+  background: url(http://drive.google.com/uc?export=view&id=1oLE_ADv8D3qfbslGD7D_Job6KDBxWEpL);
+  background-color: #cccccc;
+  background-size: cover;
+  color: var(--secondary-font-color);
+  padding: 1rem 1rem 2rem 1rem;
+  background-position: center center;
+  font-family: var(--roboto-font);
+}
+
+.project_li > .project_text p {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+.project_li > .project_text > h4 {
+  color: var(--heading-color);
+}
+
+@media (min-width: 780px) {
+  .project_li {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .project_li > .project_image {
+    display: block;
+  }
+
+  .project_li > .project_image > img {
+    min-height: 90%;
+    min-width: 100%;
+    border-radius: 5px;
+    object-fit: cover;
+  }
+
+  .project_li > .project_text {
+    background: none;
+    text-align: right;
+    padding: 1rem 2rem 3rem 0;
+    margin-left: -10%;
+  }
+
+  .project_text > .project_desc {
+    background-color: var(--secondary-dark);
+    padding: 1rem;
+    border-radius: 5px;
+  }
+
+  /* The following css below is odd even specific */
+}

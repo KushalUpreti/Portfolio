@@ -24,10 +24,10 @@ export default function SideNav() {
                 <a href="#skills"><FontAwesomeIcon icon={faWrench} /></a>
             </li>
             <li>
-                <a href="#a"><FontAwesomeIcon icon={faList} /></a>
+                <a href="#projects"><FontAwesomeIcon icon={faList} /></a>
             </li>
             <li>
-                <a href="#a"><FontAwesomeIcon icon={faPhone} /></a>
+                <a href="#contact"><FontAwesomeIcon icon={faPhone} /></a>
             </li>
         </ul>
     </nav>

@@ -1,0 +1,7 @@
+.project_secion {
+}
+
+.project_section > ul {
+  list-style: none;
+  padding: 0;
+}

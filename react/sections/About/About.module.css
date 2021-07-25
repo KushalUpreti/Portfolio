@@ -2,6 +2,11 @@
   width: 100%;
 }
 
+.section > .about {
+  position: absolute;
+  top: 80vh;
+}
+
 .section > .flex_about {
   display: flex;
   flex-direction: column;

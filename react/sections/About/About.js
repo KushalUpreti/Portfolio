@@ -2,7 +2,8 @@ import classes from './About.module.css';
 import Avatar from '../../component/Avatar/Avatar';
 
 export default function About() {
-    return <section className={classes.section} id="about">
+    return <section className={classes.section} >
+        <div id="about" className={classes.about}></div>
         <div className={classes.flex_about} >
             <div className={classes.about_div}>
                 <h2>
