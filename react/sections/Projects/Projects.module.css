@@ -1,7 +1,36 @@
-.project_secion {
-}
-
 .project_section > ul {
   list-style: none;
   padding: 0;
+}
+
+.project_section > h2 {
+  display: flex;
+  white-space: nowrap;
+  align-items: center;
+  color: var(--heading-color);
+  font-family: var(--roboto-font);
+  margin-bottom: 2.5rem;
+}
+
+.project_section > h2::after {
+  content: "";
+  display: block;
+  position: relative;
+  top: 3px;
+  width: 175px;
+  height: 1px;
+  margin-left: 20px;
+  background-color: var(--secondary-font-color);
+}
+
+@media (min-width: 400px) {
+  .project_section > h2::after {
+    width: 100%;
+  }
+}
+
+@media (min-width: 700px) {
+  .project_section > h2::after {
+    width: 415px;
+  }
 }

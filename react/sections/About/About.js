@@ -6,7 +6,7 @@ export default function About() {
         <div id="about" className={classes.about}></div>
         <div className={classes.flex_about} >
             <div className={classes.about_div}>
-                <h2>
+                <h2 className={classes.uni_h2}>
                     About Me
                 </h2>
                 <p>

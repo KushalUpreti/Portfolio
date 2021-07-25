@@ -1,6 +1,5 @@
 /* eslint-disable @next/next/no-img-element */
 import classes from './Project.module.css';
-import Image from 'next/image';
 
 export default function Project(props) {
     return <li className={classes.project_li}>
