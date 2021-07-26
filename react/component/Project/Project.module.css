@@ -1,5 +1,6 @@
 .project_li {
   margin-bottom: 3rem;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .project_li > .project_image {
@@ -7,7 +8,7 @@
 }
 
 .project_li > .project_text {
-  background: url(http://drive.google.com/uc?export=view&id=1oLE_ADv8D3qfbslGD7D_Job6KDBxWEpL);
+  background: url(/assets/react-chat.png);
   background-color: #cccccc;
   background-size: cover;
   color: var(--secondary-font-color);
@@ -22,7 +23,41 @@
 }
 
 .project_li > .project_text > h4 {
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.project_text > .project_title > h2 {
+  transition: all 0.3s ease;
+  display: inline-block;
+  margin-top: 0;
+}
+
+.project_text > .project_title > h2:hover {
   color: var(--heading-color);
+}
+
+.project_text > .project_sources {
+  display: flex;
+}
+
+.project_text > .project_sources > a {
+  padding-right: 1.5rem;
+}
+
+.project_sources > a > svg {
+  transition: fill 0.3s ease;
+  fill: white;
+}
+
+.project_sources > a > svg:hover {
+  fill: var(--heading-color);
+}
+
+@media (min-width: 400px) {
+  .project_li > .project_text {
+    padding: 1rem 1rem 2rem 2rem;
+  }
 }
 
 @media (min-width: 780px) {
@@ -30,6 +65,7 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 6rem;
+    box-shadow: none;
   }
 
   .project_li > .project_image {
@@ -40,28 +76,33 @@
     min-height: 100%;
     min-width: 100%;
     border-radius: 5px;
-    /* object-fit: cover; */
+    object-fit: cover;
+  }
+  .project_li > .project_text > h4 {
+    color: var(--heading-color);
   }
 
   .project_li > .project_text {
     background: none;
+    padding: 1rem 1rem 2rem 1rem;
     text-align: right;
     margin-left: -10%;
+    max-width: 55%;
+    min-width: 50%;
   }
 
   .project_text > .project_desc {
     background-color: var(--secondary-dark);
     padding: 1rem;
     border-radius: 5px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px,
+      rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
   }
 
   /* The following css below is odd even specific */
   .project_li:nth-child(even) > .project_image {
     order: 1;
-  }
-
-  .project_li:nth-child(even) > .project_image > img {
-    max-width: 70%;
+    padding-right: 1rem;
   }
 
   .project_li:nth-child(even) > .project_text {
@@ -69,6 +110,15 @@
     margin-right: -10%;
     margin-left: 0;
     z-index: 3;
-    padding: 1rem 0 3rem 0;
+    padding: 1rem 0;
+  }
+
+  .project_li:nth-child(odd) .project_sources {
+    justify-content: flex-end;
+  }
+
+  .project_li:nth-child(odd) .project_sources > a {
+    padding-left: 1.5rem;
+    padding-right: 0;
   }
 }

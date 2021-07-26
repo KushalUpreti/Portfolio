@@ -8,7 +8,7 @@
     text-align: center;
     position: fixed;
     bottom: 0;
-    right: 3rem;
+    right: 0.7rem;
   }
 
   .socials_ul > li > a > svg {
@@ -41,5 +41,11 @@
 
   .socials_container > .socials_ul > li:hover {
     transform: translateY(-5px);
+  }
+}
+
+@media (min-width: 1000px) {
+  .socials_container {
+    right: 3rem;
   }
 }
