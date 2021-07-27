@@ -4,7 +4,7 @@ export default function Index() {
     return <section className={classes.index} id="index">
         <div className={classes.intro}>
             <h1>Kushal Upreti</h1>
-            <p>Full-stack web & mobile developer.</p>
+            <p>I build scalable web and mobile products.</p>
         </div>
     </section>
 }

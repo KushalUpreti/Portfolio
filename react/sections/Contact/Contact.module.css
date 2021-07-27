@@ -1,5 +1,10 @@
 .contact_section {
-  padding: var(--desktop-section-padding-top);
+  padding: var(--phone-section-padding-top);
+}
+
+.contact_section > .absolute_div {
+  position: absolute;
+  top: 583vh;
 }
 
 .contact_flex {
@@ -86,6 +91,10 @@
 }
 
 @media (min-width: 700px) {
+  .contact_section {
+    padding: var(--tablet-section-padding-top);
+  }
+
   .contact_flex {
     flex-direction: row;
   }
@@ -93,5 +102,11 @@
   .contact_flex > .map_div {
     padding: 0 1rem;
     flex-basis: 50%;
+  }
+}
+
+@media (min-width: 1000px) {
+  .contact_section {
+    padding: var(--desktop-section-padding-top);
   }
 }

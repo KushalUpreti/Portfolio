@@ -30,7 +30,8 @@ export default function Contact() {
         e.preventDefault();
     }
 
-    return <section id="contact" className={classes.contact_section}>
+    return <section className={classes.contact_section}>
+        <div className={classes.absolute_div} id="contact" />
         <h2>
             Contact me
         </h2>
