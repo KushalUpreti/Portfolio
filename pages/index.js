@@ -7,6 +7,7 @@ import About from '../react/sections/About/About';
 import Socials from '../react/component/Socials/Socials';
 import Skills from '../react/sections/Skills/Skills';
 import Projects from '../react/sections/Projects/Projects';
+import Contact from '../react/sections/Contact/Contact';
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
           <About />
           <Skills />
           <Projects />
+          <Contact />
         </main>
       </div>
       <Socials />
