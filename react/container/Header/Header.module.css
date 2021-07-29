@@ -47,13 +47,13 @@
   overflow: hidden;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .header {
     display: none;
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1080px) {
   .main {
     padding: 0 102px 0 150px;
   }

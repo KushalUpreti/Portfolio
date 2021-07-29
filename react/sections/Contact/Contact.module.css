@@ -64,6 +64,7 @@
   align-items: center;
   color: var(--heading-color);
   font-family: var(--roboto-font);
+  font-size: var(--section-heading-font-size);
 }
 
 .contact_section > h2::after {
@@ -71,7 +72,7 @@
   display: block;
   position: relative;
   top: 3px;
-  width: 360px;
+  width: 330px;
   height: 1px;
   margin-left: 20px;
   background-color: var(--secondary-font-color);
@@ -98,7 +99,7 @@
   cursor: not-allowed;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .contact_para {
     width: 50%;
     text-align: justify;
@@ -118,7 +119,7 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1080px) {
   .contact_section {
     padding: var(--desktop-section-padding-top);
   }

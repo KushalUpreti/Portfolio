@@ -2,7 +2,7 @@
   display: none;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .socials_container {
     display: block;
     text-align: center;
@@ -44,7 +44,7 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1080px) {
   .socials_container {
     right: 3rem;
   }

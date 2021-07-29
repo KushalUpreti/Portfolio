@@ -9,6 +9,7 @@
   color: var(--heading-color);
   font-family: var(--roboto-font);
   margin-bottom: 2.5rem;
+  font-size: var(--section-heading-font-size);
 }
 
 .skills_section > h2::after {
@@ -22,7 +23,7 @@
   background-color: var(--secondary-font-color);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .skills_section {
     padding: var(--tablet-section-padding-top);
   }
@@ -36,13 +37,9 @@
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1080px) {
   .skills_section {
     padding: var(--desktop-section-padding-top);
-  }
-
-  .skills_section > h2::after {
-    width: 65%;
   }
 
   .skills_section > h2 {

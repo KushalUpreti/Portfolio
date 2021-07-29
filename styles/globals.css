@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=League+Script&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@480&display=swap");
 
 :root {
   --heading-color: #ff0040;
@@ -12,6 +12,7 @@
   --phone-section-padding-top: 2.5rem 0;
   --tablet-section-padding-top: 5rem 0;
   --desktop-section-padding-top: 5.5rem 0;
+  --section-heading-font-size: 1.8rem;
 }
 
 html,

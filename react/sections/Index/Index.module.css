@@ -29,13 +29,13 @@
   }
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .main {
     padding: 0 52px 0 100px;
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1080px) {
   .main {
     padding: 0 102px 0 150px;
   }

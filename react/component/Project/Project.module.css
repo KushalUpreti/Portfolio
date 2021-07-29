@@ -58,7 +58,7 @@
   fill: var(--heading-color);
 }
 
-@media (min-width: 400px) {
+@media (min-width: 480px) {
   .project_li > .project_text {
     padding: 1rem 1rem 2rem 2rem;
   }

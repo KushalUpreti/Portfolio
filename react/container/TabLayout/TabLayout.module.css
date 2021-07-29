@@ -60,14 +60,14 @@
   font-family: var(--roboto-font);
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .tab_layout {
     margin: auto;
     max-width: 80%;
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1080px) {
   .tab_layout {
     max-width: 70%;
   }

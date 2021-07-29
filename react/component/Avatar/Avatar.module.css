@@ -5,7 +5,7 @@
   background-color: beige;
 }
 
-@media (min-width: 400px) {
+@media (min-width: 480px) {
   .svg {
     width: 250px;
     height: 250px;

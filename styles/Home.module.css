@@ -7,18 +7,18 @@
   margin: auto;
 }
 
-/* This media query below runs after 400px */
-@media (min-width: 400px) {
+/* This media query below runs after 480px */
+@media (min-width: 480px) {
   /*  */
 }
 
-@media (min-width: 700px) {
+@media (min-width: 768px) {
   .main {
     padding: 0 52px 0 100px;
   }
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1080px) {
   .main {
     padding: 0 142px 0 190px;
   }
