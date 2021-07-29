@@ -7,3 +7,9 @@
   z-index: 5;
   backdrop-filter: blur(3px);
 }
+
+@media (min-width: 700px) {
+  .backdrop {
+    display: none;
+  }
+}

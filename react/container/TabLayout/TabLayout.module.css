@@ -45,7 +45,7 @@
 
 .tab_layout > .skills_content {
   margin-top: 3rem;
-  min-height: 350px;
+  /* min-height: 350px; */
 }
 
 .tab_layout > .skills_content > p {

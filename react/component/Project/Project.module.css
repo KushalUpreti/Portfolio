@@ -3,6 +3,10 @@
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
+.project_li:last-child {
+  margin-bottom: 0;
+}
+
 .project_li > .project_image {
   display: none;
 }
@@ -11,7 +15,7 @@
   background: url(/assets/react-chat.png);
   background-color: #cccccc;
   background-size: cover;
-  color: var(--secondary-font-color);
+  color: white;
   padding: 1rem 1rem 2rem 1rem;
   background-position: center center;
   font-family: var(--roboto-font);
@@ -89,6 +93,7 @@
     margin-left: -10%;
     max-width: 55%;
     min-width: 50%;
+    color: var(--secondary-font-color);
   }
 
   .project_text > .project_desc {

@@ -1,10 +1,19 @@
 .contact_section {
+  position: relative;
   padding: var(--phone-section-padding-top);
 }
 
 .contact_section > .absolute_div {
   position: absolute;
-  top: 583vh;
+  top: 35px;
+}
+
+.contact_para {
+  padding-bottom: 1rem;
+}
+
+.contact_para > p {
+  color: var(--secondary-font-color);
 }
 
 .contact_flex {
@@ -55,7 +64,6 @@
   align-items: center;
   color: var(--heading-color);
   font-family: var(--roboto-font);
-  margin-bottom: 4rem;
 }
 
 .contact_section > h2::after {
@@ -91,6 +99,11 @@
 }
 
 @media (min-width: 700px) {
+  .contact_para {
+    width: 50%;
+    text-align: justify;
+  }
+
   .contact_section {
     padding: var(--tablet-section-padding-top);
   }

@@ -20,16 +20,12 @@
 .intro > p {
   font-family: var(--roboto-font);
   color: var(--secondary-font-color);
-  font-size: 0.8rem;
+  font-size: var(--para-font-size-mobile);
 }
 
 @media (min-width: 500px) {
   .intro > h1 {
     font-size: 6rem;
-  }
-
-  .intro > p {
-    font-size: 1.1rem;
   }
 }
 
@@ -42,5 +38,9 @@
 @media (min-width: 1000px) {
   .main {
     padding: 0 102px 0 150px;
+  }
+
+  .intro > p {
+    font-size: 1rem;
   }
 }

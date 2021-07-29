@@ -35,6 +35,12 @@ export default function Contact() {
         <h2>
             Contact me
         </h2>
+        <div className={classes.contact_para}>
+            <p>I&apos;m actively looking for a frontend internship position currently.
+                If you want to work on a project with me or just want to say Hi, drop me a message below.
+            </p>
+        </div>
+
         <div className={classes.contact_flex}>
             <div className={classes.form_div}>
                 <form className={classes.contact_form} onSubmit={submitFormHandler}>
