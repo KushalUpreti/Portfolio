@@ -21,6 +21,16 @@ const inputReducer = (state, action) => {
     }
 };
 
+function ErrorSignal(props) {
+    return (
+        <div className={props.classes.error_signal}>
+            <div
+                className={`${!props.inputState.isValid && props.inputState.isTouched ?
+                    props.classes.form_error : props.classes.form_success}`} />
+        </div>
+    )
+}
+
 const Input = props => {
     const [inputState, dispatch] = useReducer(inputReducer, {
         value: props.initialValue || '',
@@ -60,6 +70,7 @@ const Input = props => {
                     onBlur={touchHandler}
                     value={inputState.value}
                 />
+                <ErrorSignal classes={props.classes} inputState={inputState} />
             </>
         ) : (
             <>
@@ -72,6 +83,7 @@ const Input = props => {
                     placeholder={props.placeholder}
                     value={inputState.value}
                 />
+                <ErrorSignal classes={props.classes} inputState={inputState} />
             </>
         );
 

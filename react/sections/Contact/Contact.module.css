@@ -34,13 +34,15 @@
   background: #2b2b2b;
   height: 50px;
   font-size: 1rem;
-  margin-bottom: 0.5rem;
   color: var(--secondary-font-color);
   padding: 0 20px;
 }
 
-.input:-webkit-autofill {
-  background: #2b2b2b;
+.contact_form input[type="text"]:focus,
+.contact_form input[type="email"]:focus,
+.contact_form textarea:focus {
+  outline: none;
+  border: none;
 }
 
 .contact_form textarea {
@@ -80,6 +82,25 @@
   height: 1px;
   margin-left: 20px;
   background-color: var(--secondary-font-color);
+}
+
+.contact_form > .error_signal {
+  height: 2px;
+  margin-bottom: 0.5rem;
+}
+
+.contact_form > .error_signal > div {
+  height: 100%;
+  transition: all 0.3s ease-in-out;
+}
+
+.form_error {
+  width: 100%;
+  background-color: red;
+}
+
+.form_success {
+  width: 0;
 }
 
 @media (min-width: 768px) {
