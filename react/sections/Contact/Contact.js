@@ -82,7 +82,7 @@ export default function Contact() {
                         id="message"
                         element="textarea"
                         type="text"
-                        placeholder="Message"
+                        placeholder="Message (30 characters minimun)"
                         validators={[VALIDATOR_REQUIRE(), VALIDATOR_MINLENGTH(30)]}
                         errorText="Please enter a valid message of min length 30 characters."
                         onInput={inputHandler}

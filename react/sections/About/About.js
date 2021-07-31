@@ -21,7 +21,7 @@ export default function About() {
                     Aliquip exercitation cillum velit commodo dolor proident.
                 </p>
                 <Button
-                    click={() => { window.open('https://drive.google.com/file/d/1h-IdgfBXLGhkvPkG6B0uAP-4StNEjRr9/view?usp=sharing', '_blank') }}
+                    click={() => { window.open('/assets/Resume.pdf', '_blank') }}
                     text="Resume"
                     type="button"
                 />
