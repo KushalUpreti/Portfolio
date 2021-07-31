@@ -1,0 +1,25 @@
+.email_container {
+  text-align: center;
+  color: var(--secondary-font-color);
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  margin-bottom: 2rem;
+}
+
+.email_container > p {
+  cursor: pointer;
+}
+
+.email_container > a {
+  transition: all 0.3s ease;
+}
+
+.email_container > a:hover {
+  color: var(--heading-color);
+}
+
+@media (min-width: 768px) {
+  .email_container {
+    letter-spacing: 2px;
+  }
+}

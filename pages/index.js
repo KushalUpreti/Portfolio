@@ -8,6 +8,7 @@ import Socials from '../react/component/Socials/Socials';
 import Skills from '../react/sections/Skills/Skills';
 import Projects from '../react/sections/Projects/Projects';
 import Contact from '../react/sections/Contact/Contact';
+import End from '../react/sections/End/End';
 
 export default function Home() {
   return (
@@ -26,6 +27,7 @@ export default function Home() {
           <Skills />
           <Projects />
           <Contact />
+          <End />
         </main>
       </div>
       <Socials />

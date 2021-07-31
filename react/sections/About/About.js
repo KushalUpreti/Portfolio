@@ -1,5 +1,6 @@
 import classes from './About.module.css';
 import Avatar from '../../component/Avatar/Avatar';
+import Button from '../../component/Button/Button';
 
 export default function About() {
     return <section className={classes.section} >
@@ -19,7 +20,11 @@ export default function About() {
                     laborum incididunt. Dolore id magna enim Lorem Lorem. Irure laborum in veniam ullamco in enim voluptate duis duis ad.
                     Aliquip exercitation cillum velit commodo dolor proident.
                 </p>
-                <button onClick={() => { window.open('https://drive.google.com/file/d/1h-IdgfBXLGhkvPkG6B0uAP-4StNEjRr9/view?usp=sharing', '_blank') }}>Resume</button>
+                <Button
+                    click={() => { window.open('https://drive.google.com/file/d/1h-IdgfBXLGhkvPkG6B0uAP-4StNEjRr9/view?usp=sharing', '_blank') }}
+                    text="Resume"
+                    type="button"
+                />
 
             </div>
 

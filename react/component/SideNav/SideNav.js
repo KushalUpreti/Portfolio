@@ -15,19 +15,19 @@ export default function SideNav() {
 
         <ul>
             <li>
-                <a href="#index"><FontAwesomeIcon icon={faHome} /></a>
+                <a href="#index" title="Home"><FontAwesomeIcon icon={faHome} /></a>
             </li>
             <li>
-                <a href="#about"><FontAwesomeIcon icon={faUserAlt} /></a>
+                <a href="#about" title="About"><FontAwesomeIcon icon={faUserAlt} /></a>
             </li>
             <li>
-                <a href="#skills"><FontAwesomeIcon icon={faWrench} /></a>
+                <a href="#skills" title="Skills"><FontAwesomeIcon icon={faWrench} /></a>
             </li>
             <li>
-                <a href="#projects"><FontAwesomeIcon icon={faList} /></a>
+                <a href="#projects" title="Projects"><FontAwesomeIcon icon={faList} /></a>
             </li>
             <li>
-                <a href="#contact"><FontAwesomeIcon icon={faPhone} /></a>
+                <a href="#contact" title="Contact"><FontAwesomeIcon icon={faPhone} /></a>
             </li>
         </ul>
     </nav>

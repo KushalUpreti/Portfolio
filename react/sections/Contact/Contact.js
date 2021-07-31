@@ -1,7 +1,8 @@
 import classes from './Contact.module.css';
 import Input from '../../container/Input/Input';
 import { useForm } from '../../hooks/form-hook';
-import { VALIDATOR_MINLENGTH, VALIDATOR_EMAIL, VALIDATOR_REQUIRE } from '../../utils/validators'
+import { VALIDATOR_MINLENGTH, VALIDATOR_EMAIL, VALIDATOR_REQUIRE } from '../../utils/validators';
+import Button from '../../component/Button/Button';
 
 export default function Contact() {
     const [formState, inputHandler] = useForm(
@@ -87,7 +88,7 @@ export default function Contact() {
                         onInput={inputHandler}
                         classes={classes}
                     />
-                    <button type="submit" disabled={!formState.isValid}>Submit</button>
+                    <Button type="submit" disabled={!formState.isValid} text="Submit" />
                 </form>
             </div>
             <div className={classes.map_div}>
@@ -98,5 +99,6 @@ export default function Contact() {
                     loading="lazy"></iframe>
             </div>
         </div>
+
     </section>
 }

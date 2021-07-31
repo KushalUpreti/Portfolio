@@ -60,7 +60,6 @@ const Input = props => {
                     onBlur={touchHandler}
                     value={inputState.value}
                 />
-                <label className={!inputState.isValid ? props.classes.special : ""} />
             </>
         ) : (
             <>
@@ -73,7 +72,6 @@ const Input = props => {
                     placeholder={props.placeholder}
                     value={inputState.value}
                 />
-                <label />
             </>
         );
 

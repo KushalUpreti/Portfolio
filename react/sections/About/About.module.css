@@ -44,22 +44,6 @@
   text-align: justify;
 }
 
-.section button {
-  cursor: pointer;
-  width: 80px;
-  height: 40px;
-  margin-top: 20px;
-  background-color: var(--primary-dark);
-  color: var(--secondary-font-color);
-  font-family: var(--roboto-font);
-  transition: all 0.3s ease;
-  border: 1px solid var(--heading-color);
-}
-
-.section button:hover {
-  background-color: #ff004083;
-}
-
 .section > .flex_about > .about_div {
   flex: 1 1 40%;
   min-width: 25ch;
