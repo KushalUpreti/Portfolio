@@ -27,8 +27,29 @@ export default function Contact() {
         false
     );
 
-    const submitFormHandler = (e) => {
+    const submitFormHandler = async (e) => {
         e.preventDefault();
+        const { name, email, subject, message } = formState.inputs;
+        if (name.value.trim() === '' || email.value.trim() === '' || subject.value.trim() === '' || message.value.trim() === '') {
+            // TODO: Nice try.
+            return;
+        }
+        let response = await fetch("https://formsubmit.co/kushalupreti101@gmail.com", {
+            method: "POST",
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify({
+                name: name.value,
+                email: email.value,
+                subject: subject.value,
+                message: message.value
+            })
+        });
+        if (response.status === 200) {
+            console.log("Email sent successfully.")
+        }
     }
 
     return <section className={classes.contact_section}>
