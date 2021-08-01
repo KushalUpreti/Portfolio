@@ -6,7 +6,7 @@
   background-color: var(--primary-dark);
   color: var(--secondary-font-color);
   font-family: var(--roboto-font);
-  transition: all 0.3s ease;
+  transition: all var(--transition-duration) ease;
   border: 1px solid var(--heading-color);
 }
 

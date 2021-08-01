@@ -10,7 +10,7 @@
   cursor: pointer;
   position: relative;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: all var(--transition-duration) ease;
   display: inline;
 }
 
@@ -26,7 +26,7 @@
   left: 50%;
   transform: translate(-50%, 10px);
   animation-name: intro;
-  animation-duration: 0.3s;
+  animation-duration: var(--transition-duration);
 }
 
 @keyframes intro {
@@ -55,7 +55,7 @@
 }
 
 .email_container > a {
-  transition: all 0.3s ease;
+  transition: all var(--transition-duration) ease;
 }
 
 .email_container > a:hover {

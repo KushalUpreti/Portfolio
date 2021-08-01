@@ -1,7 +1,7 @@
 .header {
   width: 100%;
   height: 4rem;
-  transition: 0.3s linear;
+  transition: var(--transition-duration) linear;
   position: fixed;
   top: 0;
   z-index: 15;
@@ -27,7 +27,7 @@
 .header > .header_container {
   padding-left: 30px;
   height: 100%;
-  transition: all 0.3s ease;
+  transition: all var(--transition-duration) ease;
 }
 
 .header > .header_container > .header_flex_container {

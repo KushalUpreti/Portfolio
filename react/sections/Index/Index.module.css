@@ -15,12 +15,30 @@
   font-family: "Dancing Script", cursive;
   font-size: 3rem;
   margin: 0;
+  animation-name: entry;
+  animation-duration: var(--animation-duration);
+  animation-fill-mode: both;
 }
 
 .intro > p {
   font-family: var(--roboto-font);
   color: var(--secondary-font-color);
   font-size: var(--para-font-size-mobile);
+  animation-name: entry;
+  animation-duration: var(--animation-duration);
+  animation-fill-mode: both;
+  animation-delay: 0.3s;
+}
+
+@keyframes entry {
+  from {
+    transform: translateY(1rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
 
 @media (min-width: 500px) {

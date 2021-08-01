@@ -91,7 +91,7 @@
 
 .contact_form > .error_signal > div {
   height: 100%;
-  transition: all 0.3s ease-in-out;
+  transition: all var(--transition-duration) ease-in-out;
 }
 
 .form_error {

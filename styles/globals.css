@@ -13,6 +13,8 @@
   --tablet-section-padding-top: 5rem 0;
   --desktop-section-padding-top: 5.5rem 0;
   --section-heading-font-size: 1.8rem;
+  --transition-duration: 0.3s;
+  --animation-duration: 0.5s;
 }
 
 html,

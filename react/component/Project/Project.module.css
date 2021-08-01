@@ -32,7 +32,7 @@
 }
 
 .project_text > .project_title > h2 {
-  transition: all 0.3s ease;
+  transition: all var(--transition-duration) ease;
   display: inline-block;
   margin-top: 0;
 }
@@ -50,7 +50,7 @@
 }
 
 .project_sources > a > svg {
-  transition: fill 0.3s ease;
+  transition: fill var(--transition-duration) ease;
   fill: white;
 }
 
