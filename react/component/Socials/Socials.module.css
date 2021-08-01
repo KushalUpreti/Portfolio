@@ -2,7 +2,7 @@
   display: none;
   animation-name: entry;
   animation-duration: var(--animation-duration);
-  animation-delay: 2.3s;
+  animation-delay: 2.6s;
   animation-fill-mode: both;
 }
 
