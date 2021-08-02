@@ -1,6 +1,14 @@
 .project_li {
   margin-bottom: 3rem;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  opacity: 0;
+}
+
+.entry_class {
+  animation-name: entry;
+  animation-duration: var(--animation-duration);
+  animation-fill-mode: both;
+  animation-delay: 0.3s;
 }
 
 .project_li:last-child {
@@ -125,5 +133,17 @@
   .project_li:nth-child(odd) .project_sources > a {
     padding-left: 1.5rem;
     padding-right: 0;
+  }
+}
+
+@keyframes entry {
+  from {
+    transform: translateY(1.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 }

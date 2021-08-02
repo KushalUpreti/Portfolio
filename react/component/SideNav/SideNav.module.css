@@ -37,10 +37,14 @@
     margin-left: 3px;
     padding: 10px 8px;
     color: var(--heading-color);
-    transition: all 0.2s ease;
     animation-name: li-anim;
+    transition: all var(--transition-duration) ease;
     animation-duration: var(--animation-duration);
-    animation-fill-mode: both;
+    animation-fill-mode: backwards;
+  }
+
+  .sideNav > ul > li:hover {
+    transform: translateY(-5px);
   }
 
   .sideNav li:nth-child(1) {
@@ -58,10 +62,6 @@
   }
   .sideNav li:nth-child(5) {
     animation-delay: 2.2s;
-  }
-
-  .sideNav li:hover {
-    transform: scale(1.2);
   }
 
   @keyframes entry {

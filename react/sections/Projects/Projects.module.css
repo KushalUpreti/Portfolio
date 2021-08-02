@@ -2,6 +2,13 @@
   padding: var(--phone-section-padding-top);
 }
 
+.entry_class {
+  animation-name: entry;
+  animation-duration: var(--animation-duration);
+  animation-fill-mode: both;
+  animation-delay: 0.3s;
+}
+
 .project_section > ul {
   list-style: none;
   padding: 0;
@@ -41,5 +48,17 @@
 
   .project_section {
     padding: var(--desktop-section-padding-top);
+  }
+}
+
+@keyframes entry {
+  from {
+    transform: translateY(1.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 }

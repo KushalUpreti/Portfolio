@@ -3,8 +3,14 @@ import Input from '../../container/Input/Input';
 import { useForm } from '../../hooks/form-hook';
 import { VALIDATOR_MINLENGTH, VALIDATOR_EMAIL, VALIDATOR_REQUIRE } from '../../utils/validators';
 import Button from '../../component/Button/Button';
+import { useFadeIn } from '../../hooks/intersection-hook';
+import { useRef } from 'react';
 
 export default function Contact() {
+    const contactRef = useRef();
+    const [isVisible] = useFadeIn(contactRef);
+
+
     const [formState, inputHandler] = useForm(
         {
             name: {
@@ -52,7 +58,7 @@ export default function Contact() {
         }
     }
 
-    return <section className={classes.contact_section}>
+    return <section className={`${classes.contact_section}  ${isVisible ? classes.entry_class : ""}`} ref={contactRef}>
         <div className={classes.absolute_div} id="contact" />
         <h2>
             Contact me

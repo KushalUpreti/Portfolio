@@ -12,7 +12,7 @@ export default function About() {
 
     return <section className={classes.section} >
         <div id="about" className={classes.about}></div>
-        <div className={`${classes.flex_about}  ${isVisible ? classes.entry_class : ""}`} ref={aboutRef}>
+        <div className={`${classes.flex_about}  ${isVisible ? classes.entry_class : ""}`}>
             <div className={classes.about_div}>
                 <h2 className={classes.uni_h2}>
                     About Me
@@ -22,7 +22,7 @@ export default function About() {
                     officia elit id minim nisi reprehenderit consectetur. Officia consequat dolore ad proident dolor consequat est
                     minim non adipisicing exercitation non non voluptate.
                 </p>
-                <p>
+                <p ref={aboutRef}>
                     Cillum qui et incididunt aute aute quis et id consequat. Qui irure in velit Lorem esse aliqua incididunt ex consequat
                     laborum incididunt. Dolore id magna enim Lorem Lorem. Irure laborum in veniam ullamco in enim voluptate duis duis ad.
                     Aliquip exercitation cillum velit commodo dolor proident.

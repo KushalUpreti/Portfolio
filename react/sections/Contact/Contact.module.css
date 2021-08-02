@@ -2,6 +2,12 @@
   position: relative;
   padding: var(--phone-section-padding-top);
 }
+.entry_class {
+  animation-name: entry;
+  animation-duration: var(--animation-duration);
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
+}
 
 .contact_section > .absolute_div {
   position: absolute;
@@ -129,5 +135,17 @@
 
   .contact_section > h2::after {
     width: 330px;
+  }
+}
+
+@keyframes entry {
+  from {
+    transform: translateY(1.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 }

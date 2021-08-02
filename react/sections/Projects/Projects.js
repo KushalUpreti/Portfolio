@@ -1,8 +1,13 @@
 import classes from './Projects.module.css';
 import Project from '../../component/Project/Project';
+import { useFadeIn } from '../../hooks/intersection-hook';
+import { useRef } from 'react';
 
 export default function Projects() {
-    return <section className={classes.project_section} id="projects">
+    const projectRef = useRef();
+    const [isVisible] = useFadeIn(projectRef);
+
+    return <section className={`${classes.project_section}  ${isVisible ? classes.entry_class : ""}`} ref={projectRef} id="projects">
         <h2>
             My Projects
         </h2>

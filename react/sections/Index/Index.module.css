@@ -18,7 +18,7 @@
   margin: 0;
   animation-name: entry;
   animation-duration: var(--animation-duration);
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
   animation-fill-mode: both;
 }
 

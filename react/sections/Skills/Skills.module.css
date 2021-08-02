@@ -8,9 +8,9 @@
 
 .entry_class {
   animation-name: entry;
-  animation-duration: 0.5s;
+  animation-duration: var(--animation-duration);
   animation-fill-mode: both;
-  animation-delay: 0.5s;
+  animation-delay: 0.3s;
 }
 
 .skills_section > div > h2 {

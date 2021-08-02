@@ -1,8 +1,13 @@
 /* eslint-disable @next/next/no-img-element */
+import { useRef } from 'react';
+import { useFadeIn } from '../../hooks/intersection-hook';
 import classes from './Project.module.css';
 
 export default function Project(props) {
-    return <li className={classes.project_li}>
+    const projectRef = useRef();
+    const [isVisible] = useFadeIn(projectRef);
+
+    return <li className={`${classes.project_li}  ${isVisible ? classes.entry_class : ""}`} ref={projectRef}>
         <>
             <div className={classes.project_image}>
                 <img src={`${props.image_src}`} alt="project image" width="100%" />
