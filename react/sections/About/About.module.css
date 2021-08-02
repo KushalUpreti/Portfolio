@@ -8,8 +8,16 @@
   top: -150px;
 }
 
+.entry_class {
+  animation-name: entry;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
+}
+
 .section > .flex_about {
   display: flex;
+  visibility: hidden;
   flex-direction: column;
   flex-wrap: wrap;
 }
@@ -82,5 +90,17 @@
 
   .section > .flex_about > .avatar_div {
     text-align: right;
+  }
+}
+
+@keyframes entry {
+  from {
+    transform: translateY(1.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 }

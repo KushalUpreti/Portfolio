@@ -1,11 +1,18 @@
 import classes from './About.module.css';
 import Avatar from '../../component/Avatar/Avatar';
 import Button from '../../component/Button/Button';
+import { useFadeIn } from '../../hooks/intersection-hook';
+
+import { useRef } from 'react';
 
 export default function About() {
+    const aboutRef = useRef();
+    const [isVisible] = useFadeIn(aboutRef);
+
+
     return <section className={classes.section} >
         <div id="about" className={classes.about}></div>
-        <div className={classes.flex_about} >
+        <div className={`${classes.flex_about}  ${isVisible ? classes.entry_class : ""}`} ref={aboutRef}>
             <div className={classes.about_div}>
                 <h2 className={classes.uni_h2}>
                     About Me

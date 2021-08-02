@@ -1,40 +1,14 @@
 import classes from './Header.module.css';
 import SideDrawer from '../../component/SideDrawer/Sidedrawer';
 import HamIcon from '../../component/HamIcon/HamIcon';
-import { useState, useRef, useEffect } from 'react';
-import Link from 'next/link'
+import { useState } from 'react';
+import Link from 'next/link';
+import { useScroll } from '../../hooks/scroll-hook';
 
-export default function Header(props) {
-    const [scrollingDown, setScrollingDown] = useState(false);
-    const [onTop, setOnTop] = useState(true);
+export default function Header() {
+
     const [drawer, setDrawer] = useState(false);
-
-
-    const scrollRef = useRef();
-
-    useEffect(() => {
-        scrollRef.current = 0;
-        window.addEventListener('scroll', onScroll);
-
-        return () => {
-            window.removeEventListener('scroll', onScroll);
-        }
-    }, [])
-
-    function onScroll() {
-        var st = window.pageYOffset || document.documentElement.scrollTop;
-        if (st > scrollRef.current) {
-            setScrollingDown(true);
-        } else {
-            setScrollingDown(false);
-        }
-        if (st === 0) {
-            setOnTop(true);
-        } else {
-            setOnTop(false);
-        }
-        scrollRef.current = st;
-    }
+    const { scrollingDown, onTop } = useScroll();
 
 
     const drawerHandler = () => {

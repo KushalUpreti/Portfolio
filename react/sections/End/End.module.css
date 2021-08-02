@@ -3,6 +3,7 @@
   color: var(--secondary-font-color);
   font-size: 0.9rem;
   letter-spacing: 1px;
+  position: relative;
   margin-bottom: 2rem;
 }
 
@@ -16,9 +17,9 @@
 
 .ctc {
   display: none;
-  position: absolute;
   background-color: var(--secondary-dark);
   height: 40px;
+  position: absolute;
   padding: 0 1rem;
   width: fit-content;
   top: -60px;
@@ -49,7 +50,7 @@
   color: var(--heading-color);
 }
 
-.email_container > p:hover .ctc {
+.email_container > p:hover + .ctc {
   display: block;
   color: var(--secondary-font-color);
 }
