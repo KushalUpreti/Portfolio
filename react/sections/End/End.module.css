@@ -13,6 +13,8 @@
   text-align: center;
   transition: all var(--transition-duration) ease;
   display: inline;
+  z-index: 3;
+  color: rgb(0, 153, 255);
 }
 
 .ctc {
@@ -28,6 +30,7 @@
   transform: translate(-50%, 10px);
   animation-name: intro;
   animation-duration: var(--transition-duration);
+  z-index: 1;
 }
 
 @keyframes intro {
