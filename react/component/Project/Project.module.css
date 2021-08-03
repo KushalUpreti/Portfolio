@@ -23,7 +23,7 @@
   background: url(/assets/react-chat.png);
   background-color: #cccccc;
   background-size: cover;
-  color: white;
+  color: var(--secondary-font-color);
   padding: 1rem 1rem 2rem 1rem;
   background-position: center center;
   font-family: var(--roboto-font);
@@ -92,6 +92,7 @@
   }
   .project_li > .project_text > h4 {
     color: var(--heading-color);
+    font-family: var(--heading-font);
   }
 
   .project_li > .project_text {

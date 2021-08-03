@@ -4,8 +4,8 @@ import classes from './TabLayout.module.css';
 export default function TabLayout() {
     const [sliderActive, setSliderActive] = useState(false);
 
-    return <div className={classes.tab_layout}>
-        <div className={classes.selector_div}>
+    return <div className={classes.tab_layout}  >
+        <div className={classes.selector_div}  >
             <div className={classes.image_text_div}>
 
                 <div onClick={() => { setSliderActive(false) }}>
@@ -28,7 +28,7 @@ export default function TabLayout() {
 
         </div>
 
-        <div className={classes.skills_content}>
+        <div className={`${classes.skills_content}  ${sliderActive ? classes.switch1 : classes.switch2}`} >
             {!sliderActive ?
                 <>
                     <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse sit amet tortor

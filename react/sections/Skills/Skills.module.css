@@ -18,7 +18,7 @@
   white-space: nowrap;
   align-items: center;
   color: var(--heading-color);
-  font-family: var(--roboto-font);
+  font-family: var(--heading-font);
   margin-bottom: 2.5rem;
   font-size: var(--section-heading-font-size);
 }

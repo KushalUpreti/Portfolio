@@ -4,7 +4,7 @@
   animation-name: entry;
   animation-duration: var(--animation-duration);
   animation-fill-mode: both;
-  animation-delay: 3s;
+  animation-delay: 1.3s;
   transition: all var(--transition-duration) ease;
 }
 
@@ -90,5 +90,11 @@
   to {
     transform: translateY(0);
     opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    animation-delay: 3s;
   }
 }
