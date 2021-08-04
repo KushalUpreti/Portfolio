@@ -34,8 +34,6 @@
   }
 
   .sideNav li {
-    margin-left: 3px;
-    padding: 10px 8px;
     color: var(--heading-color);
     animation-name: li-anim;
     transition: all var(--transition-duration) ease;
@@ -43,8 +41,18 @@
     animation-fill-mode: backwards;
   }
 
-  .sideNav > ul > li:hover {
-    transform: translateY(-5px);
+  .sideNav li > a:hover svg {
+    color: white;
+  }
+
+  .sideNav li > a > svg {
+    padding: 10px;
+    transition: color var(--transition-duration) ease;
+  }
+
+  .active_nav {
+    border-left: 2px solid white;
+    padding: 10px 10px 10px 8px !important;
   }
 
   .sideNav li:nth-child(1) {

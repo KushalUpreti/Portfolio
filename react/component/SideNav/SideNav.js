@@ -2,8 +2,11 @@ import classes from "./SideNav.module.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faWrench, faUserAlt, faList, faPhone } from '@fortawesome/free-solid-svg-icons';
 import Link from "next/link";
+import { useState } from "react";
 
 export default function SideNav() {
+    const [active, setActive] = useState("None");
+
     return <nav className={classes.sideNav}>
         <div>
             <Link passHref href="/">
@@ -14,20 +17,27 @@ export default function SideNav() {
         </div>
 
         <ul>
-            <li>
-                <a href="#index" title="Home"><FontAwesomeIcon icon={faHome} /></a>
+            <li onClick={() => { setActive("Home") }}>
+                <a href="#index" title="Home"><FontAwesomeIcon icon={faHome}
+                    className={active === "Home" ? classes.active_nav : ""} />
+                </a>
             </li>
-            <li>
-                <a href="#about" title="About"><FontAwesomeIcon icon={faUserAlt} /></a>
+            <li onClick={() => { setActive("About") }}>
+                <a href="#about" title="About"><FontAwesomeIcon icon={faUserAlt}
+                    className={active === "About" ? classes.active_nav : ""} />
+                </a>
             </li>
-            <li>
-                <a href="#skills" title="Skills"><FontAwesomeIcon icon={faWrench} /></a>
+            <li onClick={() => { setActive("Skills") }}>
+                <a href="#skills" title="Skills"><FontAwesomeIcon icon={faWrench}
+                    className={active === "Skills" ? classes.active_nav : ""} /></a>
             </li>
-            <li>
-                <a href="#projects" title="Projects"><FontAwesomeIcon icon={faList} /></a>
+            <li onClick={() => { setActive("Projects") }}>
+                <a href="#projects" title="Projects"><FontAwesomeIcon icon={faList}
+                    className={active === "Projects" ? classes.active_nav : ""} /></a>
             </li>
-            <li>
-                <a href="#contact" title="Contact"><FontAwesomeIcon icon={faPhone} /></a>
+            <li onClick={() => { setActive("Contact") }}>
+                <a href="#contact" title="Contact"><FontAwesomeIcon icon={faPhone}
+                    className={active === "Contact" ? classes.active_nav : ""} /></a>
             </li>
         </ul>
     </nav>
