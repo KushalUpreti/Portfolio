@@ -39,13 +39,14 @@
     transition: all var(--transition-duration) ease;
     animation-duration: var(--animation-duration);
     animation-fill-mode: backwards;
+    cursor: pointer;
   }
 
-  .sideNav li > a:hover svg {
+  .sideNav li:hover svg {
     color: white;
   }
 
-  .sideNav li > a > svg {
+  .sideNav li svg {
     padding: 10px;
     transition: color var(--transition-duration) ease;
   }

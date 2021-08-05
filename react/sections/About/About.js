@@ -9,7 +9,6 @@ export default function About() {
     const aboutRef = useRef();
     const [isVisible] = useFadeIn(aboutRef);
 
-
     return <section className={classes.section} >
         <div id="about" className={classes.about}></div>
         <div className={`${classes.flex_about}  ${isVisible ? classes.entry_class : ""}`}>
@@ -18,21 +17,19 @@ export default function About() {
                     About Me
                 </h2>
                 <p>
-                    Elit ad ex labore veniam eiusmod ex quis commodo do cupidatat cillum tempor. Mollit laborum pariatur ullamco ad
-                    officia elit id minim nisi reprehenderit consectetur. Officia consequat dolore ad proident dolor consequat est
-                    minim non adipisicing exercitation non non voluptate.
+                    Hi! I&apos;m Kushal Upreti. I&apos;m a software engineer with an interest in making innovative ideas accessible through
+                    web and mobile platform. I have extensive experience in web development and native android application development.
                 </p>
                 <p ref={aboutRef}>
-                    Cillum qui et incididunt aute aute quis et id consequat. Qui irure in velit Lorem esse aliqua incididunt ex consequat
-                    laborum incididunt. Dolore id magna enim Lorem Lorem. Irure laborum in veniam ullamco in enim voluptate duis duis ad.
-                    Aliquip exercitation cillum velit commodo dolor proident.
+                    I specialize in MERN stack with experience in SSR using NextJS and a hint of PHP. I have also worked with native apps for both
+                    Java and Kotlin codebase. I can optimally utilize a common backend for both web and app frontend for a product. These days I'm
+                    learning to harness the power of ML in my applications.
                 </p>
                 <Button
                     click={() => { window.open('/assets/Resume.pdf', '_blank') }}
                     text="Resume"
                     type="button"
                 />
-
             </div>
 
             <div className={classes.avatar_div}>

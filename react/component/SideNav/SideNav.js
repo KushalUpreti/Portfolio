@@ -18,26 +18,29 @@ export default function SideNav() {
 
         <ul>
             <li onClick={() => { setActive("Home") }}>
-                <a href="#index" title="Home"><FontAwesomeIcon icon={faHome}
+                <Link href="#index" passHref><FontAwesomeIcon icon={faHome} title="Home"
                     className={active === "Home" ? classes.active_nav : ""} />
-                </a>
+                </Link>
             </li>
             <li onClick={() => { setActive("About") }}>
-                <a href="#about" title="About"><FontAwesomeIcon icon={faUserAlt}
+                <Link href="#about" passHref><FontAwesomeIcon icon={faUserAlt} title="About"
                     className={active === "About" ? classes.active_nav : ""} />
-                </a>
+                </Link>
             </li>
             <li onClick={() => { setActive("Skills") }}>
-                <a href="#skills" title="Skills"><FontAwesomeIcon icon={faWrench}
-                    className={active === "Skills" ? classes.active_nav : ""} /></a>
+                <Link href="#skills" passHref><FontAwesomeIcon icon={faWrench} title="Skills"
+                    className={active === "Skills" ? classes.active_nav : ""} />
+                </Link>
             </li>
             <li onClick={() => { setActive("Projects") }}>
-                <a href="#projects" title="Projects"><FontAwesomeIcon icon={faList}
-                    className={active === "Projects" ? classes.active_nav : ""} /></a>
+                <Link href="#projects" passHref><FontAwesomeIcon icon={faList} title="Projects"
+                    className={active === "Projects" ? classes.active_nav : ""} />
+                </Link>
             </li>
             <li onClick={() => { setActive("Contact") }}>
-                <a href="#contact" title="Contact"><FontAwesomeIcon icon={faPhone}
-                    className={active === "Contact" ? classes.active_nav : ""} /></a>
+                <Link href="#contact" passHref><FontAwesomeIcon icon={faPhone} title="Contact"
+                    className={active === "Contact" ? classes.active_nav : ""} />
+                </Link>
             </li>
         </ul>
     </nav>

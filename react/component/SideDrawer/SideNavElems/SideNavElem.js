@@ -1,6 +1,7 @@
 import classes from './SideNavElem.module.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faWrench, faUserAlt, faList, faPhone } from '@fortawesome/free-solid-svg-icons';
+import Link from 'next/link'
 
 const SideNavElem = (props) => {
 
@@ -8,7 +9,7 @@ const SideNavElem = (props) => {
         <>
             <ul className={classes.side_nav_elems}>
                 <li onClick={props.remove}>
-                    <a href="#index"><FontAwesomeIcon icon={faHome} /></a>
+                    <Link href="#index" passHref><FontAwesomeIcon icon={faHome} /></Link>
                     <a href="#index" onClick={props.shut} >Home</a>
                 </li>
                 <li onClick={props.remove}>

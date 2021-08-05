@@ -1,5 +1,4 @@
 import classes from './Socials.module.css';
-import Link from 'next/link'
 
 export default function Socials() {
     return <div className={classes.socials_container}>

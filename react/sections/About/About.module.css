@@ -49,7 +49,6 @@
   line-height: var(--para-line-height);
   font-family: var(--roboto-font);
   font-size: var(--para-font-size-mobile);
-  text-align: justify;
 }
 
 .section > .flex_about > .about_div {
@@ -64,6 +63,10 @@
 }
 
 @media (min-width: 480px) {
+  .about_div > p {
+    /* text-align: justify; */
+  }
+
   .about_div > h2::after {
     width: 100%;
   }
