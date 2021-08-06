@@ -17,7 +17,7 @@ export default function About() {
                     About Me
                 </h2>
                 <p>
-                    Hi! I&apos;m Kushal Upreti. I&apos;m a software engineer with an interest in making innovative ideas accessible through
+                    Hi! &nbsp;I&apos;m Kushal Upreti. I&apos;m a software engineer with an interest in making innovative ideas accessible through
                     web and mobile platform. I have extensive experience in web development and native android application development.
                 </p>
                 <p ref={aboutRef}>

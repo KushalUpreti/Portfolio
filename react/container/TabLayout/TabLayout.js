@@ -31,22 +31,24 @@ export default function TabLayout() {
         <div className={`${classes.skills_content}  ${sliderActive ? classes.switch1 : classes.switch2}`} >
             {!sliderActive ?
                 <>
-                    <p>Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Suspendisse sit amet tortor
-                        nec turpis semper tincidunt. Pellentesque id porttitor ante, eget auctor quam Quisque tempus, velit.</p>
+                    <p>I primarily work with MERN stack where I have built and deployed multiple full-stack projects till date.
+                        I like to make use of techniques like SEO, SSR and accessiblity to reach as many people as possible through web.
+                    </p>
                     <h3>Concepts</h3>
-                    <p>HTML, &nbsp; CSS, &nbsp; JS,	&nbsp; SQL,	&nbsp; Sass, &nbsp; Git, &nbsp; NPM, &nbsp; REST, &nbsp; ES6</p>
+                    <p>HTML &nbsp; CSS &nbsp; JS &nbsp; SQL &nbsp; Sass &nbsp; Git &nbsp; Npm &nbsp; REST &nbsp; ES6</p>
                     <h3>Tools</h3>
-                    <p>React,	&nbsp;  NodeJs,	&nbsp; MongoDB,	&nbsp; ExpressJs, &nbsp; SQL, &nbsp; NextJs</p>
+                    <p>React &nbsp; NodeJs &nbsp;  Express &nbsp; MongoDB  &nbsp; NextJs &nbsp; MySQL &nbsp; Firebase
+                        &nbsp; Dev tools &nbsp; Bootstrap</p>
                 </>
                 :
                 <>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing. Pellentesque facilisis elit mauris,
-                        id ullamcorper orci mollis ut. Lorem ipsum dolor sit, consectetur adipiscing elit finibus urna sed eros
-                        elementum placerat.</p>
+                    <p>I love building native apps because of their performance and greater customizability. With nearly half of the internet
+                        usage being through android handhelds, Android is an amazing platform to bring your ideas to life.
+                    </p>
                     <h3>Concepts</h3>
-                    <p>Kotlin,	&nbsp; MVVM, &nbsp; Dependency Injection, &nbsp; JUnit Testing,	&nbsp; Deployment</p>
+                    <p>Java, &nbsp; Kotlin, &nbsp; MVVM, &nbsp; Dependency Injection, &nbsp; JUnit Testing,	&nbsp; Deployment</p>
                     <h3>Tools</h3>
-                    <p>Jetpack,	&nbsp; Hilt, &nbsp; Retrofit, &nbsp; Picasso,	&nbsp; Firebase, &nbsp; MLKit</p>
+                    <p>Android--Studio &nbsp;Jetpack	&nbsp; Hilt &nbsp; Retrofit &nbsp; Paging-3 &nbsp; Picasso	&nbsp; Firebase &nbsp; MLKit &nbsp; OpenCV</p>
                 </>
             }
         </div>
