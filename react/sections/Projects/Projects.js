@@ -13,7 +13,7 @@ export default function Projects() {
         </h2>
         <ul>
             <Project
-                image_src="/assets/react-chat.png"
+                image_src="/assets/ReactChat.jpeg"
                 title="React-Chat"
                 project_link="https://github.com/KushalUpreti/React-Chat"
                 project_desc={"Qui aliquip voluptate nisi id non ad reprehenderit aliqua. Reprehenderit duis in labore labore nisi nostrud" +
@@ -23,7 +23,7 @@ export default function Projects() {
             />
 
             <Project
-                image_src="/assets/react-chat.png"
+                image_src="/assets/ReactChat.jpeg"
                 title="React-Chat"
                 project_link="https://github.com/KushalUpreti/React-Chat"
                 project_desc={"Qui aliquip voluptate nisi id non ad reprehenderit aliqua. Reprehenderit duis in labore labore nisi nostrud" +
@@ -33,7 +33,7 @@ export default function Projects() {
             />
 
             <Project
-                image_src="/assets/react-chat.png"
+                image_src="/assets/ReactChat.jpeg"
                 title="React-Chat"
                 project_link="https://github.com/KushalUpreti/React-Chat"
                 project_desc={"Qui aliquip voluptate nisi id non ad reprehenderit aliqua. Reprehenderit duis in labore labore nisi nostrud" +
@@ -43,7 +43,7 @@ export default function Projects() {
             />
 
             <Project
-                image_src="/assets/react-chat.png"
+                image_src="/assets/ReactChat.jpeg"
                 title="React-Chat"
                 project_link="https://github.com/KushalUpreti/React-Chat"
                 project_desc={"Qui aliquip voluptate nisi id non ad reprehenderit aliqua. Reprehenderit duis in labore labore nisi nostrud" +

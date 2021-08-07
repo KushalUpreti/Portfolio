@@ -18,12 +18,11 @@ export default function About() {
                 </h2>
                 <p>
                     Hi! &nbsp;I&apos;m Kushal Upreti. I&apos;m a software engineer with an interest in making innovative ideas accessible through
-                    web and mobile platform. I have extensive experience in web development and native android application development.
+                    web and mobile platforms. I have extensive experience in web development and native android application development.
                 </p>
                 <p ref={aboutRef}>
                     I specialize in MERN stack with experience in SSR using NextJS and a hint of PHP. I have also worked with native apps for both
-                    Java and Kotlin codebase. I can optimally utilize a common backend for both web and app frontend for a product. These days I'm
-                    learning to harness the power of ML in my applications.
+                    Java and Kotlin codebase. I can optimally utilize a common backend for both web and app frontend for a product.
                 </p>
                 <Button
                     click={() => { window.open('/assets/Resume.pdf', '_blank') }}
