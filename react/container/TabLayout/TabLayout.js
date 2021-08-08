@@ -42,8 +42,8 @@ export default function TabLayout() {
                 </>
                 :
                 <>
-                    <p>I love building native android apps because of their performance and greater customizability. With the majority of internet
-                        usage being through android handhelds, it is an amazing platform to bring your ideas to life.
+                    <p>I love building native android apps because of their performance and greater customizability. With the majority of web traffic
+                        being through android handhelds, it is an amazing platform to bring your ideas to life.
                     </p>
                     <h3>Concepts</h3>
                     <p>Java, &nbsp; Kotlin, &nbsp; MVVM, &nbsp; Dependency Injection, &nbsp; JUnit Testing,	&nbsp; Deployment</p>

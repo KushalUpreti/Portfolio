@@ -10,12 +10,14 @@ export default function Project(props) {
     return <li className={`${classes.project_li}  ${isVisible ? classes.entry_class : ""}`} ref={projectRef}>
         <>
             <div className={classes.project_image}>
-                <img src={`${props.image_src}`} alt="project image" width="100%" />
+                <a href={props.hosted_link} target="_blank" rel="noreferrer">
+                    <img src={`${props.image_src}`} alt="project image" width="100%" />
+                </a>
             </div>
 
             <div className={classes.project_text} >
                 <h4>Featured Project</h4>
-                <a href={`${props.project_link}`} className={classes.project_title}><h2>{props.title}</h2></a>
+                <a href={`${props.hosted_link}`} className={classes.project_title}><h2>{props.title}</h2></a>
 
                 <div className={classes.project_desc}>
                     <p>
