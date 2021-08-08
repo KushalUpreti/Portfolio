@@ -20,8 +20,8 @@
 }
 
 .project_li > .project_text {
-  background: url(/assets/desktop/ReactChat.jpeg);
-  background-color: #cccccc;
+  /* background: url(/assets/mobile/ReactChat.jpeg); */
+  background-color: #1a1111;
   background-size: cover;
   color: var(--secondary-font-color);
   padding: 1rem 1rem 2rem 1rem;

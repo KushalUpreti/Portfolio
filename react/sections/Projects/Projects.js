@@ -36,7 +36,7 @@ export default function Projects() {
                 image_src="/assets/desktop/Keystroke.png"
                 title="Keystroke"
                 project_link="https://github.com/KushalUpreti/Keystroke"
-                project_desc={"A website used for practicing touch typing. Includes virtual keyboard and multiple stat trackers. Includes customizable settings" +
+                project_desc={"A website used for practicing touch typing. Includes virtual keyboard and multiple stat trackers. Built-in customizable settings" +
                     " like custom text, difficulty, text length and much more."}
                 tech_stack="HTML &nbsp; CSS &nbsp; JavaScript"
                 hosted_link="https://kushalupreti.github.io/Keystroke/"
