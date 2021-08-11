@@ -1,4 +1,4 @@
-import { useState, useEffect, useRef } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 
 
 export const useFadeIn = (ref) => {
@@ -20,3 +20,4 @@ export const useFadeIn = (ref) => {
 
     return [isVisible];
 }
+

@@ -10,7 +10,6 @@ export default function Contact() {
     const contactRef = useRef();
     const [isVisible] = useFadeIn(contactRef);
 
-
     const [formState, inputHandler] = useForm(
         {
             name: {
@@ -40,7 +39,7 @@ export default function Contact() {
             // TODO: Nice try.
             return;
         }
-        let response = await fetch("https://formsubmit.co/kushalupreti101@gmail.com", {
+        let response = await fetch("https://formsubmit.co/ajax/kushalupreti101@gmail.com", {
             method: "POST",
             headers: {
                 'Content-Type': 'application/json',
@@ -54,7 +53,7 @@ export default function Contact() {
             })
         });
         if (response.status === 200) {
-            console.log("Email sent successfully.")
+            alert("Message sent :)")
         }
     }
 
