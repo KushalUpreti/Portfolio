@@ -3,9 +3,10 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faWrench, faUserAlt, faList, faPhone } from '@fortawesome/free-solid-svg-icons';
 import Link from "next/link";
 import { useState } from "react";
+import { useSideNavContext } from '../../context/sidenav-context';
 
 export default function SideNav() {
-    const [active, setActive] = useState("None");
+    const currentNav = useSideNavContext();
 
     return <nav className={classes.sideNav}>
         <div>
@@ -17,29 +18,29 @@ export default function SideNav() {
         </div>
 
         <ul>
-            <li onClick={() => { setActive("Home") }}>
-                <Link href="#index" passHref><FontAwesomeIcon icon={faHome} title="Home"
-                    className={active === "Home" ? classes.active_nav : ""} />
+            <li >
+                <Link href="#index" passHref><FontAwesomeIcon icon={faHome} title="Index"
+                    className={currentNav.scrollPos === "Index" ? classes.active_nav : ""} />
                 </Link>
             </li>
-            <li onClick={() => { setActive("About") }}>
+            <li >
                 <Link href="#about" passHref><FontAwesomeIcon icon={faUserAlt} title="About"
-                    className={active === "About" ? classes.active_nav : ""} />
+                    className={currentNav.scrollPos === "About" ? classes.active_nav : ""} />
                 </Link>
             </li>
-            <li onClick={() => { setActive("Skills") }}>
+            <li >
                 <Link href="#skills" passHref><FontAwesomeIcon icon={faWrench} title="Skills"
-                    className={active === "Skills" ? classes.active_nav : ""} />
+                    className={currentNav.scrollPos === "Skills" ? classes.active_nav : ""} />
                 </Link>
             </li>
-            <li onClick={() => { setActive("Projects") }}>
+            <li >
                 <Link href="#projects" passHref><FontAwesomeIcon icon={faList} title="Projects"
-                    className={active === "Projects" ? classes.active_nav : ""} />
+                    className={currentNav.scrollPos === "Projects" ? classes.active_nav : ""} />
                 </Link>
             </li>
-            <li onClick={() => { setActive("Contact") }}>
+            <li >
                 <Link href="#contact" passHref><FontAwesomeIcon icon={faPhone} title="Contact"
-                    className={active === "Contact" ? classes.active_nav : ""} />
+                    className={currentNav.scrollPos === "Contact" ? classes.active_nav : ""} />
                 </Link>
             </li>
         </ul>

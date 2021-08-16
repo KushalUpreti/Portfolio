@@ -2,10 +2,15 @@ import classes from './Projects.module.css';
 import Project from '../../component/Project/Project';
 import { useFadeIn } from '../../hooks/intersection-hook';
 import { useRef } from 'react';
+import { useSideNavContext } from '../../context/sidenav-context';
+
 
 export default function Projects() {
     const projectRef = useRef();
-    const [isVisible] = useFadeIn(projectRef);
+    const scrollPos = useSideNavContext();
+    const [isVisible] = useFadeIn(projectRef, () => {
+        scrollPos.setScrollPos("Projects");
+    });
 
     return <section className={`${classes.project_section}  ${isVisible ? classes.entry_class : ""}`} ref={projectRef} id="projects">
         <h2>

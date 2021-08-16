@@ -8,7 +8,7 @@
   animation-name: entry;
   animation-duration: var(--animation-duration);
   animation-fill-mode: both;
-  animation-delay: 0.3s;
+  animation-delay: 0.5s;
 }
 
 .project_li:last-child {

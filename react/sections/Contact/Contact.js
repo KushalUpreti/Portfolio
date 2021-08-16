@@ -5,10 +5,15 @@ import { VALIDATOR_MINLENGTH, VALIDATOR_EMAIL, VALIDATOR_REQUIRE } from '../../u
 import Button from '../../component/Button/Button';
 import { useFadeIn } from '../../hooks/intersection-hook';
 import { useRef } from 'react';
+import { useSideNavContext } from '../../context/sidenav-context';
 
 export default function Contact() {
     const contactRef = useRef();
-    const [isVisible] = useFadeIn(contactRef);
+    const scrollPos = useSideNavContext();
+
+    const [isVisible] = useFadeIn(contactRef, () => {
+        scrollPos.setScrollPos("Contact");
+    });
 
     const [formState, inputHandler] = useForm(
         {

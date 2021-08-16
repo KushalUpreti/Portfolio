@@ -1,5 +1,5 @@
 .project_section {
-  padding: var(--phone-section-padding-top);
+  margin: var(--phone-section-padding-top);
 }
 
 .entry_class {
@@ -47,7 +47,7 @@
   }
 
   .project_section {
-    padding: var(--desktop-section-padding-top);
+    margin: var(--desktop-section-padding-top);
   }
 }
 

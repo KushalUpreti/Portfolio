@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from 'react'
 
 
-export const useFadeIn = (ref) => {
+export const useFadeIn = (ref, callback) => {
     const [isVisible, setIsVisible] = useState(false);
 
     useEffect(() => {
@@ -11,6 +11,9 @@ export const useFadeIn = (ref) => {
             entries.forEach(entry => {
                 if (entry.isIntersecting) {
                     setIsVisible(true);
+                    if (callback) {
+                        callback();
+                    }
                 }
             });
         });

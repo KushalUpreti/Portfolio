@@ -9,6 +9,7 @@ import Skills from '../react/sections/Skills/Skills';
 import Projects from '../react/sections/Projects/Projects';
 import Contact from '../react/sections/Contact/Contact';
 import End from '../react/sections/End/End';
+import { SidenavContextProvider } from '../react/context/sidenav-context';
 
 export default function Home() {
   return (
@@ -19,17 +20,21 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <SideNav />
-      <div className={styles.content}>
-        <main className={styles.main}>
-          <Index />
-          <About />
-          <Skills />
-          <Projects />
-          <Contact />
-          <End />
-        </main>
-      </div>
+
+      <SidenavContextProvider>
+        <SideNav />
+        <div className={styles.content}>
+          <main className={styles.main}>
+            <Index />
+            <About />
+            <Skills />
+            <Projects />
+            <Contact />
+            <End />
+          </main>
+        </div>
+      </SidenavContextProvider>
+
       <Socials />
     </>
   )

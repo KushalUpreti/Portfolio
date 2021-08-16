@@ -2,12 +2,18 @@ import classes from './About.module.css';
 import Avatar from '../../component/Avatar/Avatar';
 import Button from '../../component/Button/Button';
 import { useFadeIn } from '../../hooks/intersection-hook';
-
 import { useRef } from 'react';
+import { useSideNavContext } from '../../context/sidenav-context';
+
+
 
 export default function About() {
     const aboutRef = useRef();
-    const [isVisible] = useFadeIn(aboutRef);
+    const scrollPos = useSideNavContext();
+
+    const [isVisible] = useFadeIn(aboutRef, () => {
+        scrollPos.setScrollPos("About");
+    });
 
     return <section className={classes.section} >
         <div id="about" className={classes.about}></div>

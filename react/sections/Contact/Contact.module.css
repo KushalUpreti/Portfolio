@@ -1,6 +1,6 @@
 .contact_section {
   position: relative;
-  padding: var(--phone-section-padding-top);
+  margin: var(--phone-section-padding-top);
 }
 .entry_class {
   animation-name: entry;
@@ -11,7 +11,7 @@
 
 .contact_section > .absolute_div {
   position: absolute;
-  top: 65px;
+  top: -20px;
 }
 
 .contact_para {
@@ -115,7 +115,7 @@
   }
 
   .contact_section {
-    padding: var(--tablet-section-padding-top);
+    margin: var(--tablet-section-padding-top);
   }
 
   .contact_flex {
@@ -130,7 +130,7 @@
 
 @media (min-width: 1080px) {
   .contact_section {
-    padding: var(--desktop-section-padding-top);
+    margin: var(--desktop-section-padding-top);
   }
 
   .contact_section > h2::after {
