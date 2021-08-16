@@ -31,8 +31,8 @@ export default function TabLayout() {
         <div className={`${classes.skills_content}  ${sliderActive ? classes.switch1 : classes.switch2}`} >
             {!sliderActive ?
                 <>
-                    <p>I primarily work with MERN stack where I have built and deployed multiple full-stack projects till date.
-                        I like to make use of techniques like SEO, SSR and accessiblity to reach as many people as possible through web.
+                    <p>I primarily work with the MERN stack where I have built and deployed multiple full-stack projects to date. I like to make use of
+                        techniques like SEO, SSR and accessibility to reach as many people as possible through the web.
                     </p>
                     <h3>Concepts</h3>
                     <p>HTML &nbsp; CSS &nbsp; JS &nbsp; SQL &nbsp; Sass &nbsp; Git &nbsp; Npm &nbsp; REST &nbsp; ES6</p>
@@ -42,8 +42,8 @@ export default function TabLayout() {
                 </>
                 :
                 <>
-                    <p>I love building native android apps because of their performance and greater customizability. With the majority of web traffic
-                        being through android handhelds, it is an amazing platform to bring your ideas to life.
+                    <p>I love building native android apps because of their performance and greater customizability. My android projects are
+                        not hosted in playstore but are present in my github account to view.
                     </p>
                     <h3>Concepts</h3>
                     <p>Java, &nbsp; Kotlin, &nbsp; MVVM, &nbsp; Dependency Injection, &nbsp; JUnit Testing,	&nbsp; Deployment</p>
