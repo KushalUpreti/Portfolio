@@ -19,13 +19,27 @@
   display: none;
 }
 
-.project_li > .project_text {
-  /* background: url(/assets/mobile/ReactChat.jpeg); */
-  background-color: #1a1111;
+.project_li:nth-child(1) > .project_text {
+  background: url(/assets/mobile/ReactChat.png);
+  background-repeat: no-repeat;
   background-size: cover;
-  color: var(--secondary-font-color);
+}
+
+.project_li:nth-child(2) > .project_text {
+  background: url(/assets/mobile/Wgp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project_li:nth-child(3) > .project_text {
+  background: url(/assets/mobile/Keystroke.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.project_li > .project_text {
   padding: 1rem 1rem 2rem 1rem;
-  background-position: center center;
+  color: var(--secondary-font-color);
   font-family: var(--roboto-font);
 }
 
@@ -70,6 +84,24 @@
   .project_li > .project_text {
     padding: 1rem 1rem 2rem 2rem;
   }
+
+  .project_li:nth-child(1) > .project_text {
+    background: url(/assets/tablet/ReactChat.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project_li:nth-child(2) > .project_text {
+    background: url(/assets/tablet/Wgp.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .project_li:nth-child(3) > .project_text {
+    background: url(/assets/tablet/Keystroke.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
 }
 
 @media (min-width: 780px) {
@@ -96,13 +128,14 @@
   .project_image > a:hover img {
     filter: brightness(1);
   }
+
   .project_li > .project_text > h4 {
     color: var(--heading-color);
     font-family: var(--heading-font);
   }
 
   .project_li > .project_text {
-    background: none;
+    background: none !important;
     padding: 1rem 1rem 2rem 1rem;
     text-align: right;
     margin-left: -10%;
