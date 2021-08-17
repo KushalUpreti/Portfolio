@@ -6,10 +6,12 @@ import Button from '../../component/Button/Button';
 import { useFadeIn } from '../../hooks/intersection-hook';
 import { useRef } from 'react';
 import { useSideNavContext } from '../../context/sidenav-context';
+import { useNotificationContext } from '../../context/notify-context';
 
 export default function Contact() {
     const contactRef = useRef();
     const scrollPos = useSideNavContext();
+    const notifContext = useNotificationContext();
 
     const [isVisible] = useFadeIn(contactRef, () => {
         scrollPos.setScrollPos("Contact");
@@ -39,9 +41,10 @@ export default function Contact() {
 
     const submitFormHandler = async (e) => {
         e.preventDefault();
+
         const { name, email, subject, message } = formState.inputs;
         if (name.value.trim() === '' || email.value.trim() === '' || subject.value.trim() === '' || message.value.trim() === '') {
-            // TODO: Nice try.
+            notifContext.showNotification("Nice try sussy boy", 3000, "Error");
             return;
         }
         let response = await fetch("https://formsubmit.co/ajax/kushalupreti101@gmail.com", {
@@ -58,7 +61,7 @@ export default function Contact() {
             })
         });
         if (response.status === 200) {
-            alert("Message sent :)")
+            notifContext.showNotification("Message sent successfully", 3000, "Success");
         }
     }
 

@@ -10,6 +10,9 @@ import Projects from '../react/sections/Projects/Projects';
 import Contact from '../react/sections/Contact/Contact';
 import End from '../react/sections/End/End';
 import { SidenavContextProvider } from '../react/context/sidenav-context';
+import { NotificationProvider } from '../react/context/notify-context';
+import Notify from '../react/component/Notify/Notify';
+
 
 export default function Home() {
   return (
@@ -21,20 +24,22 @@ export default function Home() {
       </Head>
       <Header />
 
-      <SidenavContextProvider>
-        <SideNav />
-        <div className={styles.content}>
-          <main className={styles.main}>
-            <Index />
-            <About />
-            <Skills />
-            <Projects />
-            <Contact />
-            <End />
-          </main>
-        </div>
-      </SidenavContextProvider>
-
+      <NotificationProvider>
+        <SidenavContextProvider>
+          <Notify />
+          <SideNav />
+          <div className={styles.content}>
+            <main className={styles.main}>
+              <Index />
+              <About />
+              <Skills />
+              <Projects />
+              <Contact />
+              <End />
+            </main>
+          </div>
+        </SidenavContextProvider>
+      </NotificationProvider>
       <Socials />
     </>
   )
