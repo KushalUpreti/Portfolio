@@ -1,23 +1,11 @@
-/* eslint-disable @next/next/no-img-element */
-import { useRef } from 'react';
-import { useFadeIn } from '../../hooks/intersection-hook';
-import classes from './Project.module.css';
+import classes from './ExtraProject.module.css';
 
-export default function Project(props) {
-    const projectRef = useRef();
-    const [isVisible] = useFadeIn(projectRef);
-
-    return <li className={`${classes.project_li}  ${isVisible ? classes.entry_class : ""}`} ref={projectRef}>
-        <>
-            <div className={classes.project_image}>
-                <a href={props.hosted_link} target="_blank" rel="noreferrer">
-                    <img src={`${props.image_src}`} alt="project image" width="100%" />
-                </a>
-            </div>
-
-            <div className={classes.project_text} >
+export default function ExtraProject(props) {
+    return <div className={classes.project_text} >
+        <a href={`${props.hosted_link}`}>
+            <>
                 <h4>Featured Project</h4>
-                <a href={`${props.hosted_link}`} className={classes.project_title}><h2>{props.title}</h2></a>
+                <h2>{props.title}</h2>
 
                 <div className={classes.project_desc}>
                     <p>
@@ -39,7 +27,7 @@ export default function Project(props) {
                         </svg>
                     </a>
                 </div>
-            </div>
-        </>
-    </li>
+            </>
+        </a>
+    </div>
 }

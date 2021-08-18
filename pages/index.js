@@ -12,6 +12,7 @@ import End from '../react/sections/End/End';
 import { SidenavContextProvider } from '../react/context/sidenav-context';
 import { NotificationProvider } from '../react/context/notify-context';
 import Notify from '../react/component/Notify/Notify';
+import ExtraProjects from '../react/sections/ExtraProjects/ExtraProjects';
 
 
 export default function Home() {
@@ -34,6 +35,7 @@ export default function Home() {
               <About />
               <Skills />
               <Projects />
+              <ExtraProjects />
               <Contact />
               <End />
             </main>
