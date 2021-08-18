@@ -11,7 +11,7 @@
 
 .contact_section > .absolute_div {
   position: absolute;
-  top: -20px;
+  top: 0;
 }
 
 .contact_para {
@@ -110,6 +110,11 @@
 }
 
 @media (min-width: 768px) {
+  .contact_section > .absolute_div {
+    position: absolute;
+    top: -20px;
+  }
+
   .contact_para {
     width: 50%;
   }

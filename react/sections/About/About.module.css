@@ -6,7 +6,7 @@
 
 .section > .about {
   position: absolute;
-  top: -150px;
+  top: 0;
 }
 
 .entry_class {
@@ -74,6 +74,11 @@
 }
 
 @media (min-width: 768px) {
+  .section > .about {
+    position: absolute;
+    top: -150px;
+  }
+
   .about_div > h2::after {
     width: 450px;
   }

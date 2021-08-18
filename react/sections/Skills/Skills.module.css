@@ -9,7 +9,7 @@
 
 .skills_section > .absolute_div {
   position: absolute;
-  top: -85px;
+  top: -15px;
 }
 
 .entry_class {
@@ -41,6 +41,11 @@
 }
 
 @media (min-width: 768px) {
+  .skills_section > .absolute_div {
+    position: absolute;
+    top: -85px;
+  }
+
   .skills_section {
     margin: var(--tablet-section-padding-top);
   }

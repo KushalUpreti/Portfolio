@@ -1,8 +1,8 @@
 .notify {
   position: fixed;
   display: flex;
-  top: 5px;
-  left: 3.3rem;
+  bottom: 0.5rem;
+  left: 1.25rem;
   animation-name: entry;
   animation-duration: 0.7s;
   animation-fill-mode: backwards;
@@ -22,7 +22,7 @@
 }
 
 .notify > .notification_container {
-  background-color: var(--secondary-dark);
+  background-color: #353630;
   padding: 0 1rem;
   margin-left: -5px;
   height: 100%;
@@ -32,6 +32,14 @@
 .notify > .notification_container > p {
   color: white;
   font-family: var(--roboto-font);
+}
+
+@media (min-width: 768px) {
+  .notify {
+    top: 5px;
+    left: 3.3rem;
+    bottom: unset;
+  }
 }
 
 @keyframes entry {

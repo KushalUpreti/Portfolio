@@ -44,7 +44,7 @@ export default function Contact() {
 
         const { name, email, subject, message } = formState.inputs;
         if (name.value.trim() === '' || email.value.trim() === '' || subject.value.trim() === '' || message.value.trim() === '') {
-            notifContext.showNotification("Nice try sussy boy", 3000, "Error");
+            notifContext.showNotification("Fill in the contact details correctly !!", 3000, "Error");
             return;
         }
         let response = await fetch("https://formsubmit.co/ajax/kushalupreti101@gmail.com", {
@@ -122,7 +122,7 @@ export default function Contact() {
                         onInput={inputHandler}
                         classes={classes}
                     />
-                    <Button type="submit" disabled={!formState.isValid} text="Submit" />
+                    <Button type="submit" text="Submit" />
                 </form>
             </div>
             <div className={classes.map_div}>
