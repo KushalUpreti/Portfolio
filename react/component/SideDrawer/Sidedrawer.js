@@ -1,9 +1,10 @@
-
 import Backdrop from '../Backdrop/Backdrop';
 import Container from '../Containers/Container';
 import SideNavElem from './SideNavElems/SideNavElem'
 import classes from './Sidedrawer.module.css';
 import Portal from '../../../hoc/Portal';
+import MobileSocials from '../MobileSocials/MobileSocials';
+
 
 const Sidedrawer = (props) => {
 
@@ -26,6 +27,7 @@ const Sidedrawer = (props) => {
                 <Container >
                     <SideNavElem shut={props.close} remove={props.handler} />
                 </Container>
+                <MobileSocials />
             </div>
         </>
 
