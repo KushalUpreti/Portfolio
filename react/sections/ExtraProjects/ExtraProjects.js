@@ -5,7 +5,7 @@ export default function ExtraProjects() {
     return <section className={classes.section}>
         <div className={classes.honorable_heading}>
             <h2>
-                Some Honorable mentions
+                Some Honorable mentions (Work in progress)
             </h2>
         </div>
         <div className={classes.extra_container}>
