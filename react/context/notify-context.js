@@ -15,6 +15,7 @@ export function NotificationProvider({ children }) {
     const [type, setType] = useState('Error');
 
     function showNotification(message, duration = 1000, type = "Error") {
+        if (notification) { return; }
         setNotification(message);
         setType(type);
         setTimeout(hide, duration);

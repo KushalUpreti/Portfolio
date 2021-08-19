@@ -2,6 +2,7 @@
   position: relative;
   margin: var(--phone-section-padding-top);
 }
+
 .entry_class {
   animation-name: entry;
   animation-duration: var(--animation-duration);
@@ -151,6 +152,5 @@
   to {
     transform: translateY(0);
     opacity: 1;
-    visibility: visible;
   }
 }

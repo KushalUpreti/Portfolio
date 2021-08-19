@@ -1,5 +1,13 @@
 .section {
   margin: var(--phone-section-padding-top);
+  visibility: hidden;
+}
+
+.entry_class {
+  animation-name: entry;
+  animation-duration: var(--animation-duration);
+  animation-fill-mode: both;
+  animation-delay: 0.5s;
 }
 
 .section > .honorable_heading {
@@ -21,5 +29,17 @@
   .section > .extra_container {
     flex-direction: row;
     flex-wrap: wrap;
+  }
+}
+
+@keyframes entry {
+  from {
+    transform: translateY(1.5rem);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+    visibility: visible;
   }
 }

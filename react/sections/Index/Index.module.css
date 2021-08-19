@@ -22,7 +22,13 @@
   animation-fill-mode: both;
 }
 
-.intro > p {
+.intro > div {
+  width: 90%;
+  text-align: center;
+  margin: auto;
+}
+
+.intro > div > p {
   font-family: var(--roboto-font);
   color: var(--secondary-font-color);
   font-size: var(--para-font-size-mobile);
@@ -43,9 +49,13 @@
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 480px) {
   .intro > h1 {
     font-size: 6rem;
+  }
+
+  .intro > div {
+    width: 100%;
   }
 }
 

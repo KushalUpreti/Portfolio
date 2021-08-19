@@ -12,22 +12,22 @@
   line-height: 1.5rem;
 }
 
-.project_text > a > h4 {
+.project_text > h4 {
   color: var(--heading-color);
   margin-bottom: 0.5rem;
 }
 
-.project_text > a > h2 {
+.project_text > h2 {
   transition: all var(--transition-duration) ease;
   display: inline-block;
   margin-top: 0;
 }
 
-.project_text > a > .project_sources {
+.project_text > .project_sources {
   display: flex;
 }
 
-.project_text > a > .project_sources > a {
+.project_text > .project_sources > a {
   padding-right: 1.5rem;
 }
 
@@ -41,9 +41,12 @@
 }
 
 @media (min-width: 480px) {
+  .a_container {
+    flex: 1 0 280px;
+  }
+
   .project_text {
     transition: all var(--transition-duration) ease;
-    flex: 1 0 280px;
   }
 
   .project_text:hover {
