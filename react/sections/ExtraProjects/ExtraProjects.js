@@ -55,7 +55,7 @@ export default function ExtraProjects() {
 
             <ExtraProject
                 title="Notes"
-                project_link="https://github.com/KushalUpreti/React-Chat"
+                project_link="https://github.com/KushalUpreti/Room-Persistance"
                 project_desc={"A note-keeping app that utilizes ROOM SQLite library to add, edit and delete notes."}
                 tech_stack="Java &nbsp; Android-Studio &nbsp; Room-Persistence  "
                 hosted_link="N/A"

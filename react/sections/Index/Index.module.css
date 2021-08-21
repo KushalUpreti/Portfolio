@@ -13,7 +13,7 @@
 
 .intro > h1 {
   color: var(--heading-color);
-  font-family: "Dancing Script", cursive;
+  font-family: "Dancing Script", Sans-Serif;
   font-size: 3rem;
   margin: 0;
   animation-name: entry;
