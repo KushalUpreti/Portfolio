@@ -26,7 +26,7 @@
 }
 
 .project_li:nth-child(2) > .project_text {
-  /* background: url(/assets/mobile/Wgp.png); */
+  background: url(/assets/mobile/Wgp.png);
   background-repeat: no-repeat;
   background-size: cover;
 }
