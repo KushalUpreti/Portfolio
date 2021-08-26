@@ -4,9 +4,12 @@ import { useScroll } from '../../hooks/scroll-hook';
 import { useFadeIn } from '../../hooks/intersection-hook';
 import { useRef } from 'react';
 import { useSideNavContext } from '../../context/sidenav-context';
+import Particles from 'react-tsparticles';
+import data from './particlesjs-config.json'
 
 export default function Index() {
     const indexRef = useRef();
+    const particleRef = useRef()
     const { onTop } = useScroll();
     const scrollPos = useSideNavContext();
 
@@ -15,6 +18,9 @@ export default function Index() {
     });
 
     return <section className={classes.index} id="index">
+        <div className={classes.particleBG}>
+            <Particles params={data} />
+        </div>
         <div className={classes.intro} ref={indexRef}>
             <h1>Kushal Upreti</h1>
             <div>
@@ -22,6 +28,6 @@ export default function Index() {
             </div>
 
         </div>
-        <ScrollIndicator onTop={onTop} /> :
+        <ScrollIndicator onTop={onTop} />
     </section>
 }
