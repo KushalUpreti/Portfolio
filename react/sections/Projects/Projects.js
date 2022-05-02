@@ -18,6 +18,16 @@ export default function Projects() {
         </h2>
         <ul>
             <Project
+                image_src="/assets/desktop/Canvify.png"
+                title="Canvify"
+                project_link="https://canvify.vercel.app"
+                project_desc={"A collaboration tool with features such as real-time canvas, audio/video calling, text chat, admin controls and much more " +
+                    "Designed to enhance traditional online learning experience."}
+                tech_stack="Next.JS &nbsp; Socket.IO &nbsp; Express &nbsp; MongoDB  "
+                hosted_link="https://canvify.vercel.app"
+            />
+
+            <Project
                 image_src="/assets/desktop/ReactChat.jpeg"
                 title="React-Chat"
                 project_link="https://github.com/KushalUpreti/React-Chat"
