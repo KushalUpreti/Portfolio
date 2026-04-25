@@ -48,6 +48,7 @@ export default function About() {
             alt="Headshot"
             width={250} // set desired width
             height={250} // set desired height
+            className={classes.avatar_img}
           />
         </div>
       </div>

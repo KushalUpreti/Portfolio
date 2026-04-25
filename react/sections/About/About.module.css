@@ -63,6 +63,12 @@
   text-align: center;
 }
 
+.avatar_img {
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+}
+
 @media (min-width: 480px) {
   .about_div > h2::after {
     width: 100%;
