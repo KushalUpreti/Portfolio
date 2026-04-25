@@ -4,7 +4,6 @@ import { useFadeIn } from "../../hooks/intersection-hook";
 import { useRef } from "react";
 import { useSideNavContext } from "../../context/sidenav-context";
 import Image from "next/image";
-import Headshot from "../../public/assets/Headshot.png"; // import the image
 
 export default function About() {
   const aboutRef = useRef();
@@ -45,7 +44,7 @@ export default function About() {
 
         <div className={classes.avatar_div}>
           <Image
-            src={Headshot}
+            src="/assets/Headshot.png"
             alt="Headshot"
             width={250} // set desired width
             height={250} // set desired height
