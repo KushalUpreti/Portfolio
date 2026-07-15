@@ -113,19 +113,19 @@ const resumeSyncStack = ['REACT', 'TYPESCRIPT', 'FASTAPI', 'OPENAI', 'POSTGRES',
 
 const resumeSyncModes = [
   {
-    label: 'SNIPER_MODE',
+    label: 'TARGET_MODE',
     icon: 'gps_fixed',
-    text: 'Locks onto a job description, scores the resume signal, and rewrites targeted fields without drifting from the source profile.',
+    text: 'Matches a resume to a job description, identifies weak spots, and rewrites targeted fields while preserving the candidate profile.',
   },
   {
-    label: 'POLISHER_MODE',
+    label: 'POLISH_MODE',
     icon: 'auto_fix_high',
-    text: 'Turns rough notes, scattered experience, and raw career data into recruiter-ready resume sections in seconds.',
+    text: 'Turns rough notes, scattered experience, and raw career details into clear, recruiter-ready resume sections.',
   },
   {
     label: 'DIFF_CORE',
     icon: 'difference',
-    text: 'Shows AI-generated changes side by side so users can accept stronger phrasing without losing control.',
+    text: 'Shows generated changes side by side so users can review stronger phrasing before applying it.',
   },
 ];
 
@@ -257,8 +257,8 @@ export default function Home() {
                 <span>UPRETI</span>
               </h1>
               <p className={styles.tagline}>
-                Building Java, Spring, Angular, and React applications for enterprise workflows,
-                REST APIs, microservices, and data-rich user interfaces.
+                I build enterprise web applications with Java, Spring, Angular, and React,
+                connecting dependable APIs with clean, data-rich interfaces.
               </p>
               <div className={styles.heroActions}>
                 <a href="#work">
@@ -297,7 +297,7 @@ export default function Home() {
                 <span className={styles.rsKicker}>HERO_PROJECT // LIVE_SYSTEM</span>
                 <h2>RESUMESYNC_AI</h2>
               </div>
-              <a href="https://resumesync.lol" target="_blank" rel="noreferrer">
+              <a href="https://main.d2hvmjtqaaxjjx.amplifyapp.com/" target="_blank" rel="noreferrer">
                 LAUNCH_DEMO
                 <span className="material-symbols-outlined">open_in_new</span>
               </a>
@@ -311,9 +311,9 @@ export default function Home() {
                   <em>SOLE_DEV_ARCHITECT</em>
                 </div>
                 <p>
-                  AI-powered resume optimization platform that parses resumes into a structured
-                  JSON source of truth, analyzes job descriptions, and generates precise,
-                  recruiter-friendly revisions without sacrificing formatting consistency.
+                  ResumeSync AI turns a resume and job description into focused, recruiter-ready
+                  revisions. It parses resume content into structured data, compares it against
+                  role requirements, and rebuilds consistent documents from the approved changes.
                 </p>
 
                 <div className={styles.rsStack}>
@@ -323,7 +323,7 @@ export default function Home() {
                 </div>
 
                 <div className={styles.rsActions}>
-                  <a href="https://resumesync.lol" target="_blank" rel="noreferrer">
+                  <a href="https://main.d2hvmjtqaaxjjx.amplifyapp.com/" target="_blank" rel="noreferrer">
                     ENTER_RESUMESYNC
                     <span className="material-symbols-outlined">bolt</span>
                   </a>
@@ -356,9 +356,9 @@ export default function Home() {
                 </div>
                 <div className={styles.rsDiff}>
                   <p><span>-</span> Responsible for frontend features.</p>
-                  <p><span>+</span> Built data-rich React workflows that improved recruiter scan clarity.</p>
+                  <p><span>+</span> Built React workflows that made key experience and impact easier to scan.</p>
                   <p><span>-</span> Worked with APIs and databases.</p>
-                  <p><span>+</span> Integrated FastAPI services, PostgreSQL persistence, and AI revision flows.</p>
+                  <p><span>+</span> Integrated FastAPI services, PostgreSQL persistence, and AI-assisted revisions.</p>
                 </div>
               </div>
             </div>
@@ -462,7 +462,7 @@ export default function Home() {
                 <span />
                 STATUS: ONLINE
               </div>
-              <p>© 2026 ENTERPRISE_APPLICATION_PORTFOLIO // KUSHAL_UPRETI</p>
+              <p>&copy; 2026 ENTERPRISE_APPLICATION_PORTFOLIO // KUSHAL_UPRETI</p>
             </div>
 
             <div className={styles.socials}>
